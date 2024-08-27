@@ -2,22 +2,23 @@
 
 ## PROJECT DEFINITION
 
-Our application gives the user theopportunity to use a dropdown menu and choose an ingredient (ex. Gin, Vodka,Cola, Tonic). 
-Based on the decision the application checks a database filledwith cocktails and provides the user with all the possible cocktails with the choseningredient (ex. Gin Tonic, Vodka sour, Cuba Libre).
+Our application gives the user the opportunity to use a dropdown menu and choose an ingredient (ex. Gin, Vodka,Cola, Tonic). 
+Based on the decision the application checks a database filled with cocktails and provides the user with all the possible cocktails with the chosen ingredient (ex. Gin Tonic, Vodka sour, Cuba Libre).
+The Cocktails willl be editable via CRUD (Create, Read, Update, Delete) endpoints.
 
 **Extra**
 
-In a further step the user is able toselect a cocktail and sending an e-mail with all the necessary ingredients totheir personal mailbox.
+In a further step the user is able to select a cocktail and sending an e-mail with all the necessary ingredients to their personal mailbox.
 
-Additionally, the user is able to ask for arandom cocktail.
+Additionally, the user is able to ask for a random cocktail.
 
 ## Rules
 
 **Branching Rules**
 
 Never push directly to the main branch.
-Always create a new feature branch from the main and create a pull-request tothe main branch. 
-The branch name starts with the ticket number-name and a short description ofthe task.
+Always create a new feature branch from the main and create a pull-request to the main branch. 
+The branch name starts with the ticket number-name and a short description of the task.
 Example: 1-documentation-add-definition
 
 
@@ -28,7 +29,7 @@ Additionally, for the optional learn journal, please create a personal branch, w
 
 **Commit Rules**
 
-There is no commit amount limit, buteveryone should consider the readability of a branch.
+There is no commit amount limit, but everyone should consider the readability of a branch.
 Every commit has a commit message with a short description about the changes inthe commit. 
 Force-push is not allowed
 
@@ -42,6 +43,51 @@ Every pull-request must be reviewed and approved by at least one other collabora
 
 The weekly will be every Tuesday at 8:30.
 At the meeting the team checks and updates the Kanban board and discusses thetasks in progress.
+
+**Enviroment**
+
+We will write our Frontand in Typescript React and our Backend in Java.
+Every collaborator can use the IDE they prever.
+
+## Database
+
+**Setup**
+
+To setup the Docker container use the command given below
+```
+docker run --name local-postgres -e POSTGRES_PASSWORD=drinks -p 5432:5432 -d postgres
+```
+
+When the container is running you can start DBeaver and follow the instructions:
+
+**Step 1**
+
+🔴 Start by klicking the icon shown in the image.
+
+![image info](./Images/1.png)
+
+**Step 2**
+
+🔴 Insert "dirnks" in the password area.
+🟢 coninue by clicking finish.
+
+![image info](./Images/2.png)
+
+**Step 3**
+
+🟢 Aftrer creating a connection, click on SQL in the navbar.
+
+![image info](./Images/1.png)
+
+**Step 4**
+
+Insert the SQL statement given 
+
+[SQL file](./drinks_db.sql) 
+
+🔴 Afterwards click the run skript to create a table with data.
+
+![image info](./Images/4.png)
 
 ## Time
 
@@ -153,57 +199,64 @@ Maria Schmidt played a pivotal role by spearheading the cultural shift, investin
 - **Calms concept explanation**: Concept explanation of CALMS and integration process. [QPR](https://www.qrpinternational.ch/blog/faq/was-sind-die-5-calms-devops/)
 
 ## The Three Ways
-### Was sind „The Three Ways“ im Kontext von DevOps?
-Die „Three Ways“ sind drei fundamentale Prinzipien von DevOps. Sie wurden von Gene Kim in „The Phoenix Project“ eingeführt und bieten eine strukturierte Methode an, um die Effizienz, Zusammenarbeit und kontinuierliche Verbesserung innerhalb von Organisationen zu fördern. Die Prinzipien sind:
+### What are ‘The Three Ways’ in the context of DevOps?
+The Three Ways are three fundamental principles of DevOps. They were introduced by Gene Kim in ‘The Phoenix Project’ and offer a structured method to promote efficiency, collaboration and continuous improvement within organisations. The principles are:
 
-- The First Way: Systems Thinking - Optimierung des Workflows in dem man immmer probiert das gesamten Systems ins Auge zu nehmen.
-- The Second Way: Amplify Feedback Loops - Verstärkung der Feedback-Schleifen, um Fehler frühzeitig zu erkennen und nötige Änderungen vorzunehmen.
-- The Third Way: Continual Learning and Experimentation - Förderung einer Kultur des kontinuierlichen Lernens und Experimentierens, um Innovation und Anpassungsfähigkeit zu unterstützen.
+- The First Way: Systems Thinking - optimising the workflow by always trying to look at the whole system.
+- The Second Way: Amplify Feedback Loops - amplify feedback loops to recognise errors early and make necessary changes.
+- The Third Way: Continual Learning and Experimentation - Foster a culture of continuous learning and experimentation to support innovation and adaptability.
 
-Diese Prinzipien beeinflussen die Arbeitsweise eines Unternehmens tiefgreifend, indem sie die Zusammenarbeit zwischen Entwicklung und Betrieb verbessern, die Qualität erhöhen und die Fähigkeit zur schnellen Reaktion auf Veränderungen stärken.
+These principles have a profound impact on the way an organisation works by improving collaboration between development and operations, increasing quality and strengthening the ability to respond quickly to change.
 
-### Was beschreibt der „First Way: Systems Thinking“?
-Der „First Way: Systems Thinking“ fokussiert sich auf die Optimierung des gesamten Systems und Workflows, anstatt sich auf einzelne Bestandteile zu konzentrieren. Es fördert eine Sichtweise, die den gesamten Entwicklungs- und Bereitstellungsprozess als ein zusammenhängendes System betrachtet. Teams lernen, den gesamten Weg einer Änderung von der Entwicklung bis zur Produktion zu verstehen und dabei Übergaben zu minimieren. So wird die Arbeite sichtbar gemacht und Automatisierung wird benutzt. Diese Sichtweise verbessert die Zusammenarbeit und reduziert übersehbare Fehler, was zu effizienteren Prozessen und einer schnelleren Entwicklung führt.
+### What does the ‘First Way: Systems Thinking’ describe?
+First Way: Systems Thinking focuses on optimising the entire system and workflow rather than focusing on individual components. It promotes a perspective that views the entire development and deployment process as an interconnected system. Teams learn to understand the entire path of a change from development to production, minimising handovers. In this way, work is made visible and automation is utilised. This view improves collaboration and reduces overlooked errors, leading to more efficient processes and faster development.
 
-### Welche Hauptkomponenten gehören zum „Second Way: Amplify Feedback Loops“?
-Der „Second Way“ betont die Wichtigkeit einer schnellen und kontinuierlichen Feedback-Schleifen. Die Hauptkomponenten umfassen:
+### What are the main components of the ‘Second Way: Amplify Feedback Loops’?
+The ‘Second Way’ emphasises the importance of fast and continuous feedback loops. The main components include:
 
-- Häufige und kleine Deployments - Um regelmäßiges Feedback zu ermöglichen.
-- Automatisiertes Testen - Um Fehler frühzeitig zu identifizieren.
-- Transparenz - Um Probleme sofort erkennbar zu machen.
-- Interdisziplinäre Teams - Um eine ganzheitliche Sicht auf das System zu gewährleisten.
+- Frequent and small deployments - To enable regular feedback.
+- Automated testing - To identify errors early.
+- Transparency - To make problems immediately recognisable.
+- Interdisciplinary teams - To ensure a holistic view of the system.
 
-Diese Punkte sind entscheidend, um Probleme schnell zu erkennen und zu beheben, was zu einer höheren Qualität und Zuverlässigkeit des Codes führt.
+These points are crucial to identify and fix problems quickly, resulting in higher quality and reliability of the code.
 
-### Warum ist „The Third Way: Continual Learning and Experimentation“ wichtig?
-Der „Third Way“ fördert kontinuierliches Lernen und Experimentieren, was für die Innovationsfähigkeit und Anpassungsfähigkeit eines Unternehmens entscheidend ist. Eine Kultur, die Experimente und Fehler als Lernmöglichkeiten betrachtet, ermöglicht es, sich stetig zu verbessern. Diese Haltung führt zu einer offenen Fehlerkultur und ermutigt Mitarbeiter, innovative Lösungen zu entwickeln, was langfristig das Unternehmen stärkt.
+### Why is ‘The Third Way: Continual Learning and Experimentation’ important?
+The Third Way encourages continuous learning and experimentation, which is critical to an organisation's ability to innovate and adapt. A culture that views experiments and mistakes as learning opportunities enables continuous improvement. This attitude leads to an open error culture and encourages employees to develop innovative solutions, which strengthens the company in the long term.
 
-### Wie trägt „The First Way: Systems Thinking“ zur Verbesserung des Softwareentwicklungsprozesses bei?
-„Systems Thinking“ fördert eine ganzheitliche Betrachtung des Entwicklungsprozesses, was zu einer besseren Identifizierung und Beseitigung von Engpässen führt. Durch die Reduktion von Übergaben, die Sichtbarmachung von Arbeiten und die Minimierung unnötiger Prozesse wird die Effizienz gesteigert und die Fehleranfälligkeit reduziert. Dies führt zu schnelleren, zuverlässigeren Auslieferungen und einer höheren Zufriedenheit sowohl bei den Kunden als auch bei den internen Teams.
+### How does ‘The First Way: Systems Thinking’ contribute to improving the software development process?
+‘Systems Thinking’ promotes a holistic view of the development process, which leads to better identification and elimination of bottlenecks. By reducing handovers, visualising work and minimising unnecessary processes, efficiency is increased and the susceptibility to errors is reduced. This leads to faster, more reliable deliveries and greater satisfaction for both customers and internal teams.
 
-### Wie kann das Konzept des „Amplify Feedback Loops“ die Qualität des Codes verbessern?
-Verstärkte Feedback-Schleifen ermöglichen es, Fehler schneller zu erkennen und zu beheben. Automatisierte Tests und häufige Deployments bieten kontinuierliches Feedback, was die Qualität des Codes erhöht, indem Probleme frühzeitig adressiert werden. Durch die schnelle Rückmeldung können Entwickler ihre Arbeit kontinuierlich verbessern und technische Schulden vermeiden.
+### How can the concept of ‘Amplify Feedback Loops’ improve the quality of code?
+Amplify feedback loops make it possible to recognise and rectify errors more quickly. Automated tests and frequent deployments provide continuous feedback, which increases the quality of the code by addressing issues early. Rapid feedback allows developers to continuously improve their work and avoid technical debt.
 
-### Welche Rolle spielen Experimente im „Third Way“ und wie sollten sie idealerweise durchgeführt werden?
-Experimente spielen eine zentrale Rolle im „Third Way“, da sie es ermöglichen, neue Ansätze zu testen und daraus zu lernen. Idealerweise sollten Experimente in kontrollierten Umgebungen durchgeführt werden, etwa in Form von A/B-Tests oder Canary Releases, um Risiken zu minimieren. Die Ergebnisse sollten dokumentiert und geteilt werden, um den gesamten Entwicklungsprozess zu verbessern.
+### What role do experiments play in the ‘third way’ and how should they ideally be carried out?
+Experiments play a central role in the ‘third way’ as they make it possible to test new approaches and learn from them. Ideally, experiments should be carried out in controlled environments, for example in the form of A/B tests or canary releases, in order to minimise risks. The results should be documented and shared in order to improve the entire development process.
 
-### Welche Herausforderungen können beim Implementieren des „Systems Thinking“ auftreten und wie können diese überwunden werden?
-Herausforderungen bei der Implementierung von „Systems Thinking“ können Widerstand gegen Veränderungen, mangelnde Transparenz und unklare Verantwortlichkeiten sein. Diese Hindernisse können durch Schulungen, klare Kommunikation und die Einführung von Visualisierungstools wie Kanban-Boards gelöst werden. Es ist wichtig, alle Beteiligten in den Prozess einzubeziehen und eine Kultur der offenen Zusammenarbeit zu fördern.
+### What challenges can arise when implementing systems thinking and how can these be overcome?
+Challenges in implementing systems thinking can include resistance to change, lack of transparency and unclear responsibilities. These obstacles can be overcome through training, clear communication and the introduction of visualisation tools such as Kanban boards. It is important to involve all stakeholders in the process and promote a culture of open collaboration.
 
-### Analysieren Sie, wie die Prinzipien der „Three Ways“ die Zusammenarbeit zwischen Entwicklungsteams und Betriebsteams verbessern können.
-Die „Three Ways“ fördern eine enge Zusammenarbeit zwischen Entwicklung und Betrieb durch gemeinsame Ziele, verstärkte Kommunikation und kontinuierliches Feedback. Systeme werden als Ganzes betrachtet, was zu einer besseren Abstimmung und weniger Missverständnissen führt. Dies reduziert Silos und verbessert die Integration, was zu effizienteren und zuverlässigeren Prozessen führt.
+### Analyse how the principles of the ‘Three Ways’ can improve collaboration between development teams and operations teams.
+The Three Ways encourage close collaboration between development and operations through shared goals, increased communication and continuous feedback. Systems are viewed as a whole, leading to better alignment and fewer misunderstandings. This reduces silos and improves integration, leading to more efficient and reliable processes.
 
-### Entwickeln Sie einen Plan zur Implementierung von „The Three Ways“ in einem Unternehmen, das noch keine DevOps-Praktiken eingeführt hat.
-Ein Implementierungsplan könnte wie folgt aussehen:
+### Develop a plan to implement ‘The Three Ways’ in an organisation that has not yet adopted DevOps practices.
+An implementation plan could look like this
 
-1. Schulungen und Workshops - Einführung der Mitarbeiter in die Prinzipien von DevOps und „The Three Ways“.
-2. Pilotprojekte starten - Kleine, interdisziplinäre Teams bilden, um die Prinzipien in einem begrenzten Umfang zu testen.
-3. Automatisierung einführen - Beginnen mit der Automatisierung wiederkehrender Aufgaben wie Testing und Deployment.
-4. Feedback-Schleifen verstärken - Regelmäßige Deployments und automatisierte Tests implementieren.
-5. Kultur des Lernens fördern - Regelmäßige Retrospektiven und Wissensaustausch innerhalb des Unternehmens organisieren.
+1. training and workshops - introducing employees to the principles of DevOps and ‘The Three Ways’.
+2. start pilot projects - form small, interdisciplinary teams to test the principles on a limited scale.
+3. introduce automation - start automating recurring tasks such as testing and deployment.
+4. strengthen feedback loops - implement regular deployments and automated tests.
+5. promote a culture of learning - organise regular retrospectives and knowledge sharing within the company.
 
-### Bewerten Sie die Auswirkungen von „The Second Way: Amplify Feedback Loops“ auf die Fehlerbehebung und kontinuierliche Verbesserung in einem agilen Entwicklungsprozess.
-Verstärkte Feedback-Schleifen im agilen Prozess ermöglichen es, Fehler frühzeitig zu erkennen und iterativ zu verbessern. Dies fördert eine kontinuierliche Verbesserung und reduziert technische Schulden. Die schnellere Rückmeldung ermöglicht es, Anpassungen zügig vorzunehmen und erhöht die Flexibilität und Effizienz des Entwicklungsprozesses.
+### Evaluate the impact of ‘The Second Way: Amplify Feedback Loops’ on troubleshooting and continuous improvement in an agile development process.
+Amplify feedback loops in the agile process make it possible to recognise errors early and improve them iteratively. This promotes continuous improvement and reduces technical debt. Faster feedback enables adjustments to be made quickly and increases the flexibility and efficiency of the development process.
 
-### Erörtern Sie, wie die Prinzipien von „The Three Ways“ in einer Organisation, die stark hierarchisch strukturiert ist, umgesetzt werden können.
-In einer stark hierarchischen Organisation könnte die Implementierung von „The Three Ways“ durch eine schrittweise Einführung erfolgen, beginnend mit Pilotprojekten, die Erfolge demonstrieren. Führungskräfte müssen für die Prinzipien sensibilisiert und als Befürworter gewonnen werden. Transparenz und Kommunikation sind entscheidend, um Silos abzubauen und eine Kultur des Vertrauens und der Zusammenarbeit zu schaffen.
+### Discuss how the principles of ‘The Three Ways’ can be implemented in a highly hierarchical organisation.
+In a highly hierarchical organisation, the implementation of ‘The Three Ways’ could take place through a gradual introduction, starting with pilot projects that demonstrate success. Managers need to be sensitised to the principles and won over as advocates. Transparency and communication are key to breaking down silos and creating a culture of trust and collaboration.
+
+
+
+## Protokoll
+
+**27.08.2024**
+
