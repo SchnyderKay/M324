@@ -4,7 +4,7 @@
 
 Our application gives the user the opportunity to use a dropdown menu and choose an ingredient (ex. Gin, Vodka,Cola, Tonic). 
 Based on the decision the application checks a database filled with cocktails and provides the user with all the possible cocktails with the chosen ingredient (ex. Gin Tonic, Vodka sour, Cuba Libre).
-The Cocktails willl be editable via CRUD (Create, Read, Update, Delete) endpoints.
+The Cocktails will be editable via CRUD (Create, Read, Update, Delete) endpoints.
 
 **Extra**
 
@@ -30,7 +30,7 @@ Additionally, for the optional learn journal, please create a personal branch, w
 **Commit Rules**
 
 There is no commit amount limit, but everyone should consider the readability of a branch.
-Every commit has a commit message with a short description about the changes inthe commit. 
+Every commit has a commit message with a short description about the changes in the commit. 
 Force-push is not allowed
 
 **Merge Criteria**
@@ -42,12 +42,12 @@ Every pull-request must be reviewed and approved by at least one other collabora
 **Meetings** 
 
 The weekly will be every Tuesday at 8:30.
-At the meeting the team checks and updates the Kanban board and discusses thetasks in progress.
+At the meeting the team checks and updates the Kanban board and discusses the tasks in progress.
 
 **Enviroment**
 
-We will write our Frontand in Typescript React and our Backend in Java.
-Every collaborator can use the IDE they prever.
+We will write our Frontend in Typescript React and our Backend in Java.
+Every collaborator can use the IDE they prefer.
 
 ## Database
 
@@ -62,13 +62,13 @@ When the container is running you can start DBeaver and follow the instructions:
 
 **Step 1**
 
-🔴 Start by klicking the icon shown in the image.
+🔴 Start by clicking the icon shown in the image.
 
 ![image info](./Images/1.png)
 
 **Step 2**
 
-🔴 Insert "dirnks" in the password area.
+🔴 Insert "drinks" in the password area.
 🟢 coninue by clicking finish.
 
 ![image info](./Images/2.png)
@@ -85,7 +85,7 @@ Insert the SQL statement given
 
 [SQL file](./drinks_db.sql) 
 
-🔴 Afterwards click the run skript to create a table with data.
+🔴 Afterwards click the run script to create a table with data.
 
 ![image info](./Images/4.png)
 
