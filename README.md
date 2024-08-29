@@ -98,10 +98,10 @@ The time must be entered to the nearest 15 minutes.
 [Time Sheet](https://tbzedu-my.sharepoint.com/:x:/r/personal/kay_schnyder_edu_tbz_ch/_layouts/15/Doc.aspx?sourcedoc=%7B4C0BDA20-4AE3-4985-A780-3F4F67B43329%7D&file=time_logger%201.xlsx&action=default&mobileredirect=true&wdOrigin=TEAMS-WEB.p2p_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1724143689247&web=1)
 
 
+# Theories
+##  Calms
 
-# Theory Calms:
-
-## CALMS Model: A Guide to DevOps Transformation
+### CALMS Model: A Guide to DevOps Transformation
 
 The CALMS model encapsulates the core principles of DevOps. But first, let's take a step back: What does CALMS stand for?
 
@@ -117,13 +117,13 @@ Sometimes, the "Lean" aspect is considered optional, so you may also see the mod
 
 The CALMS model is beneficial for DevOps transformation because it emphasizes that all aspects need to develop together. Culture forms the foundation since no successful transformation can occur without it. Below is an overview of how each aspect of the CALMS model connects with DevOps.
 
-## C for Culture
+### C for Culture
 
 Culture, in this context, refers to the work culture within the team and organization. It addresses how collaboration occurs among team members, regardless of their roles. In a DevOps environment, the focus is on integrating development (Dev) and operations (Ops) to work together toward a common goal, rather than functioning in isolated silos.
 
 Key to this cultural shift is the frequent release of updates to minimize the time between error detection and correction. Automation plays a significant role in achieving this, enabling teams to confidently roll out changes. However, this requires a cultural foundation where errors are accepted as part of the learning process and continuous improvement is encouraged.
 
-### Cultural Change at TechNova
+#### Cultural Change at TechNova
 
 **Which specific challenges led TechNova Solutions to decide on a DevOps transformation?**
 
@@ -133,47 +133,47 @@ TechNova Solutions faced significant challenges, including long development cycl
 
 Maria Schmidt, the CEO, addressed the cultural change by organizing workshops and team-building activities to enhance cross-departmental collaboration. A rotation program was introduced to help employees gain insights into other teams' perspectives, breaking down silos and fostering a shared sense of responsibility.
 
-## A for Automation
+### A for Automation
 
 Automation is about reducing manual processes as much as possible to increase speed. This includes automated testing, building artifacts, deployments, and monitoring after deployment. While automation is essential, it must be complemented by the other CALMS elements, especially a strong culture and proper measurement. A common mistake is to equate DevOps solely with automation, which can lead to automating existing flaws rather than improving processes.
 
-### Automation at TechNova
+#### Automation at TechNova
 
 **What types of automation were introduced and how did they affect the work processes?**
 
 TechNova implemented a CI/CD pipeline that automated testing and deployments. This transition from manual processes significantly improved software quality and deployment speed. Automation allowed the team to focus on strategic activities rather than repetitive tasks, reducing errors and improving overall efficiency.
 
-## L for Lean
+### L for Lean
 
 The Lean principle, originally from manufacturing, focuses on eliminating waste and continuously improving processes to maximize customer value. In DevOps, Lean encourages trust in the team and software, enabling well-tested experiments on production systems. This principle is crucial for achieving goals faster by determining what works through direct experimentation rather than lengthy discussions.
 
-### Lean Principles at TechNova
+#### Lean Principles at TechNova
 
 **How were Lean principles integrated into the transformation, and what specific tools or methods were used?**
 
 TechNova introduced Lean principles by implementing Kanban boards to visualize work processes and conducting "Gemba Walks" where leaders observed actual workflows to identify improvement areas. This approach helped reduce waste and optimize value flow, leading to a more streamlined and efficient process.
 
-## M for Measurement
+### M for Measurement
 
 Measurement involves using metrics to make informed decisions about what is and isn’t working. Common metrics include Lead Time, which measures the time taken from implementing a customer requirement to its deployment. This helps in assessing the efficiency of processes and the CI/CD pipeline, allowing for better optimization.
 
-### Measurement at TechNova
+#### Measurement at TechNova
 
 **What metrics were introduced to measure progress, and how were they used?**
 
 TechNova established metrics such as deployment frequency, lead time for changes, and mean time to recovery (MTTR). These KPIs provided valuable insights into process efficiency and helped the company track improvements, identify bottlenecks, and make data-driven decisions.
 
-## S for Sharing
+### S for Sharing
 
 Sharing is about learning from each other and preventing the repetition of mistakes. It involves documenting problems and lessons learned and sharing this knowledge within and outside the organization. A culture that accepts and learns from errors is essential for this aspect to thrive, impacting the overall culture of the organization.
 
-### Sharing at TechNova
+#### Sharing at TechNova
 
 **What methods did TechNova use to promote knowledge sharing and collaboration?**
 
 TechNova set up an internal wiki, organized "Lunch and Learn" sessions, and encouraged employees to share experiences at conferences and through blog posts. This facilitated the exchange of best practices and fostered a culture of continuous learning and collaboration.
 
-## Challenges and Outcomes
+### Challenges and Outcomes
 
 **What challenges were faced during the transformation, and how were they addressed?**
 
@@ -191,7 +191,7 @@ The transformation led to faster response times to customer feedback and higher 
 
 Maria Schmidt played a pivotal role by spearheading the cultural shift, investing in automation, integrating Lean principles, implementing measurement systems, and fostering a culture of sharing. Her leadership was crucial in driving the transformation and achieving the desired outcomes.
 
-## Sources
+### Sources
 
 - **CALMS Framework**: Insights and best practices derived from internal research and external consultation. [Atlassian](https://www.atlassian.com/de/devops/frameworks/calms-framework)
 - **TechNova Solutions Case Study**: Adapted from materials provided by TechNova Solutions and additional context from industry standards.
@@ -254,9 +254,56 @@ Amplify feedback loops in the agile process make it possible to recognise errors
 ### Discuss how the principles of ‘The Three Ways’ can be implemented in a highly hierarchical organisation.
 In a highly hierarchical organisation, the implementation of ‘The Three Ways’ could take place through a gradual introduction, starting with pilot projects that demonstrate success. Managers need to be sensitised to the principles and won over as advocates. Transparency and communication are key to breaking down silos and creating a culture of trust and collaboration.
 
+## Devops Process
+
+### SDLC (Software Development Lifecycle)
+-----------------------------------------
+
+SDLC is like the name suggest a lifecycle to develop software with the focus on quiality. This process consist of seven different phases, which are planned out to ensure clear goals. The following phases can be used in different kind of settings like a waterfall model or and agil working method. Depending on the team these phases can be repeated in a cycle or for a short one time project it can also only be executed ones. 
+
+![image info](./Images/SDLC.png)
+*SDLC, Source: medium.com*
+
+### Phases
+
+**Planning & Analysis**
 
 
-## Protokoll
+**Define Requirements**
 
-**27.08.2024**
+**Design**
+
+**Development**
+
+**Testing**
+
+**Deployment**
+
+**Maintainance**
+
+### Devops Lifecycle
+--------------------
+
+![image info](./Images/DevOps-Lifecycle.jpg)
+*DevOps Lifecycle, Source: browserstack.com*
+
+
+### SDLC vs Devops Lifecycle
+----------------------------
+
+### MVP (Minimum Viable Product)
+--------------------------------
+
+
+### Sources
+
+- [theproductmanager](https://theproductmanager.com/topics/software-development-life-cycle/) was used for the **SLDC** informations
+- [Medium](https://medium.com/agileinsider/how-does-the-sdlc-play-a-role-in-the-success-of-product-development-and-launch-a17baaac1054) was the source for the **SLDC** image
+- [BrowserStack](https://www.browserstack.com/guide/devops-lifecycle) was used for the **DevOps** informations and the fitting image
+- [DistantJob](https://distantjob.com/blog/mvp-development/#:~:text=MVP%20stands%20for%20Minimum%20Viable,in%20its%20development%20is%20warranted.) was used for the information about **MVP**
+
+# Meeting Protocols
+ 
+
+## Weekly/Sprint Planning 27.08.2024
 
