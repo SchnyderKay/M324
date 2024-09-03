@@ -41,7 +41,7 @@ public class ListenerHelper {
         listenerObject.setApiKey(getApiKey(requestObject));
         listenerObject.setValue(gson.toJson(requestObject.getPayload()));
         if (setId) {
-            listenerObject.setId(getObjectId(requestObject));
+            listenerObject.setId(getObjectId(requestObject).toString());
         }
 
         return listenerObject;

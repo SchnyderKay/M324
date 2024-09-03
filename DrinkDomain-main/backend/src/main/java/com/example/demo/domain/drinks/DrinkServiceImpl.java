@@ -12,4 +12,5 @@ public class DrinkServiceImpl extends AbstractServiceImpl<Drink> implements Drin
     public DrinkServiceImpl(AbstractRepository<Drink> repository) {
         super(repository);
     }
+
 }

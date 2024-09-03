@@ -43,7 +43,7 @@ public class User extends AbstractEntity {
   private Set<Role> roles = new HashSet<>();
 
   public User(UUID id, String firstName, String lastName, String email, String password, Set<Role> roles) {
-    super(id);
+    super(id.toString());
     this.firstName = firstName;
     this.lastName = lastName;
     this.email = email;

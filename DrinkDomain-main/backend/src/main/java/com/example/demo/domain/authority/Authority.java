@@ -22,7 +22,7 @@ public class Authority extends AbstractEntity {
   private String name;
 
   public Authority(UUID id, String name) {
-    super(id);
+    super(id.toString());
     this.name = name;
   }
 }
