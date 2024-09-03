@@ -58,3 +58,22 @@ Our group dynamic improved as we collaborated on task assignments and supported 
 This week was productive as we completed several key tasks, including finalizing the CALMS theory and setting up the project’s foundational components. Working through the Three Ways theory provided us with a deeper understanding of DevOps principles, which will be valuable as we move forward.
 
 Our ability to collaborate effectively has improved, especially in setting up the project infrastructure and organizing our workflow through backlog tickets. This structured approach is helping us stay on track and ensuring that everyone is clear on their responsibilities. Overall, the progress we’ve made this week has been encouraging, and we are well-prepared for the next steps.
+
+## 3 September 2024
+
+### Activities
+
+- **Create Tickets in Backlog:**
+  - We identified the remaining tasks for the module and created detailed tickets in the GitHub backlog to track their progress. Each ticket was assigned to a team member to ensure that all tasks were accounted for and distributed evenly.
+
+- **Write User Stories:**
+  - We wrote comprehensive user stories for the main features of our project. This involved outlining the requirements for each CRUD operation, ensuring that all functionalities were covered from the user’s perspective. These user stories will guide our development process and ensure that we meet the user needs effectively.
+
+- **Setting up Skeleton Project for Module:**
+  - We continued to refine and expand the skeleton project, focusing on setting up the remaining structure and integrating the necessary modules. This setup will serve as the foundation for the rest of our development work and ensure that our codebase is well-organized.
+
+### Reflection
+
+This week has been particularly challenging due to the time pressure we’re under. With the deadline looming next week and one of our team members absent for two weeks in a row, we’ve had to pick up the slack and work extra hours at home to stay on track. 
+
+Despite the stress, our team’s morale remains high, and we’ve managed to maintain a positive working environment. The vibe in the team is still good, which is helping us cope with the heavy workload. We’re confident that we can meet the deadline, but it’s going to be a close call. The next few days will be critical, and we’ll need to keep up the pace to ensure we deliver everything on time.
