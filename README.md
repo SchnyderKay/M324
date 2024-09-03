@@ -96,3 +96,37 @@ For every work time the collaborator must fill in the task they worked on and th
 The time must be entered to the nearest 15 minutes.
 
 [Time Sheet](https://tbzedu-my.sharepoint.com/:x:/r/personal/kay_schnyder_edu_tbz_ch/_layouts/15/Doc.aspx?sourcedoc=%7B4C0BDA20-4AE3-4985-A780-3F4F67B43329%7D&file=time_logger%201.xlsx&action=default&mobileredirect=true&wdOrigin=TEAMS-WEB.p2p_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1724143689247&web=1)
+
+## Protokoll
+
+### 27.08.2024
+
+**Past Tasks**
+
+For today, Luca finished the three-way theory, and Aryan finished the CALMS theory. Both of these inputs will be explained at 10 o'clock for the whole group. The script to create and fill the database should be finished as well and will be tested later in the day. 
+
+**Next Task**
+
+As a group, we will now revise our Kanban board and create the new necessary tickets for the next few weeks. In addition to new tasks, we need to distribute story points for each issue, where the rule is that 30 minutes is equal to 1 story point. 
+
+We decided to use a Java backend and a React frontend for our application. 
+
+The next tasks will be distributed as follows:
+
+**Jan** and **Aryan** will create the base of the project, and if they have leftover time, they will start coding. 
+
+**Kay** starts the theory for the DevOps processes. 
+
+**Jan** and **Kay** start setting up the database, and **Jan** writes the necessary documentation for the setup.
+
+**Luca** should write down the coding rules that our team will follow.
+
+### 03.09.2024
+
+**Next Task**
+
+As of today, we as a group will add the descriptions to the Kanban board and fix our time sheet. We also need to push our learning journals and add our teacher as a collaborator. 
+
+For the rest of the day, **Aryan** and **Jan** will work on the backend and the unit tests, as well as the needed user stories. 
+
+**Kay** works on finishing the DevOps theory and helps the other two as soon as she's finished.
