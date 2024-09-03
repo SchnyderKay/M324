@@ -6,3 +6,5 @@ Today was a productive day. My team, consisting of Jan., Aryan, Luca, and I, sta
 ## 27.08.2024
 
 After our daily meeting, we sorted out our chaos on the Kanban board. As soon as everything was sorted out again, we started working. My main task was helping Jan set up the database for our project. Afterward, I started working on the theory of the DevOps processes, where I learned about the Software Development Life Cycle and the DevOps Lifecycle. It was difficult to decide which information was usable from the research and which was not. For both of these subjects, there were multiple different versions of how many phases there are and when things are done. I wasn't able to finish it completely, so I'm going to finish it next week.
+
+**Feedback Yves**: Es geht hier mehr um eine Reflektion als darum was du gemacht hast. Was könnte man verbessern in eurem Prozess oder was war der Prozess den ihr durchlaufen seit. Wie ist das Modul für dich persönlich und was nimmst du mit, resp. steckst du rein etc
