@@ -284,7 +284,7 @@ The next tasks will be distributed as follows:
 
 As of today, we as a group will add the descriptions to the Kanban board and fix our time sheet. We also need to push our learning journals and add our teacher as a collaborator. 
 
-For the rest of the day, Aryan and Jan will work on the backend and the unit tests, as well as the needed user stories. 
+For the rest of the day, **Aryan** and **Jan** will work on the backend and the unit tests, as well as the needed user stories. 
 
-Kay works on finishing the DevOps theory and helps the other two as soon as she's finished.
+**Kay** works on finishing the DevOps theory and helps the other two as soon as she's finished.
 
