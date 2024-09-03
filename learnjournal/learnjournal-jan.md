@@ -1,6 +1,6 @@
 ## Learnjournal
 
-# 20.07.2024
+# 20.08.2024
 
 **Start**
 After a brief discussion, the team quickly agreed on a topic for the module. To my delight, we decided on an API that supports my BMA and will save me a lot of time. 
@@ -9,9 +9,10 @@ After a brief discussion, the team quickly agreed on a topic for the module. To 
 We were able to quickly agree on a basis as a team. Both the code and the rules for dealing with the code and the team were quickly defined for the team and the goal of our work was also quickly clear to everyone.
 
 
-# 27.07.2024
+# 27.08.2024
 
 **Teamwork**
+
 I am very pleased that the teamwork has worked well so far. The team is working well together and communication is going as planned. The tasks are distributed fairly and worked out carefully. 
 
 **My work**
@@ -24,3 +25,15 @@ I took on the task of defining rules for branching and pushing. This went well, 
 
 *Kanban*
 The creation of the Kanban board also went well on the whole, as we were able to quickly define tasks together. In addition, the distribution to the participants was simple and without conflicts.
+
+# 03.09.2024
+
+**Teamwork**
+
+Today was the first day that I was not satisfied with my team. someone was not on site and did not inform us about it and did not share the task he had started with us. As a result, we lost a lot of time today and may have to rework at home to make up for this mistake
+
+**My work**
+*Project skeleton*
+My task was to complete the skeleton and then write unit tests. 
+Combining the database with the existing backend led to various problems and I had to fall back on the help of my team again and again. They were happy to help me even when they were behind schedule with their task. 
+Fortunately, we were all able to complete our task in the end 
