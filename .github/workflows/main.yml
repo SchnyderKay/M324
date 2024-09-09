@@ -1,0 +1,33 @@
+name: Docker Build and Test
+
+on:
+  push:
+    branches:
+      - '**'
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up JDK 18
+        uses: actions/setup-java@v3
+        with:
+          java-version: '18'
+          distribution: 'adopt'
+
+      - name: Build with Gradle
+        run: gradle build -x test
+        working-directory: ./DrinkDomain-main/backend/
+
+      - name: Test with Gradle
+        run: gradle test
+        working-directory: ./DrinkDomain-main/backend/
+
+      - name: Upload test report
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-report
+          path: ./DrinkDomain-main/backend/build/reports/tests/test/index.html
