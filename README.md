@@ -25,6 +25,7 @@ Example: 1-documentation-add-definition
 To contribute your work, create a new branch according to the branch naming rules. 
 This branch can be used as a topic or feature branch. 
 To merge the branch, create a pull-request and ask for a code review. 
+The branches are deleted after accepting the merge request.
 Additionally, for the optional learn journal, please create a personal branch, which will be merged at the end of the project.
 
 **Commit Rules**
@@ -36,6 +37,7 @@ Force-push is not allowed
 **Merge Criteria**
 
 All tests must pass before approving a pull-request.
+The pipeline must be successfully executed. 
 There are no debug logs allowed in a pull-request.
 Every pull-request must be reviewed and approved by at least one other collaborators.
 
@@ -43,6 +45,8 @@ Every pull-request must be reviewed and approved by at least one other collabora
 
 The weekly will be every Tuesday at 8:30.
 At the meeting the team checks and updates the Kanban board and discusses the tasks in progress.
+During the meeting, problems are discussed and open tasks are assigned to the members. 
+The aim of the meeting is for everyone to know what they need to work on afterwards without having to request further feedback from anyone.
 
 **Enviroment**
 
@@ -64,20 +68,20 @@ When the container is running you can start DBeaver and follow the instructions:
 
 🔴 Start by clicking the icon shown in the image.
 
-![image info](./Images/1.png)
+![step 1](./Images/1.png)
 
 **Step 2**
 
 🔴 Insert "drinks" in the password area.
 🟢 coninue by clicking finish.
 
-![image info](./Images/2.png)
+![step 2](./Images/2.png)
 
 **Step 3**
 
 🟢 Aftrer creating a connection, click on SQL in the navbar.
 
-![image info](./Images/1.png)
+![step 3](./Images/1.png)
 
 **Step 4**
 
@@ -87,7 +91,13 @@ Insert the SQL statement given
 
 🔴 Afterwards click the run script to create a table with data.
 
-![image info](./Images/4.png)
+![step 4](./Images/4.png)
+
+**Start the backend**
+To start the backend, a terminal must be started in the IDE. 
+In the terminal, navigate to the backend using ‘cd’ and execute the following command:
+
+``` docker-compose up -d ```
 
 ## Time
 
@@ -96,6 +106,13 @@ For every work time the collaborator must fill in the task they worked on and th
 The time must be entered to the nearest 15 minutes.
 
 [Time Sheet](https://tbzedu-my.sharepoint.com/:x:/r/personal/kay_schnyder_edu_tbz_ch/_layouts/15/Doc.aspx?sourcedoc=%7B4C0BDA20-4AE3-4985-A780-3F4F67B43329%7D&file=time_logger%201.xlsx&action=default&mobileredirect=true&wdOrigin=TEAMS-WEB.p2p_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1724143689247&web=1)
+
+## User Stories
+The user stories are used to imitate the behavior of a user. 
+We can use these stories to build tests and logic into our application.
+This simplifies the planning and creation of tickets
+
+![user stories](./Images/userStories.png)
 
 ## Protokoll
 
