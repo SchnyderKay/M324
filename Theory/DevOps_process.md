@@ -5,7 +5,7 @@
 
 SDLC is like the name suggest a lifecycle to develop software with the focus on quiality, structure and cost control. This process consist of seven different phases, which are planned out to ensure clear goals. The following phases can be used in different kind of settings like a waterfall model or and agil working method. Depending on the team these phases can be repeated in a cycle or for a short one time project it can also only be executed ones.
 
-<img src="./Images/SDLC.png" width="400" height="400">
+<img src="../Images/SDLC.png" width="400" height="400">
 
 *SDLC, Source: medium.com*
 
@@ -46,7 +46,7 @@ The final step is the maintenance part. Here, the client or user can report bugs
 
 The DevOps lifecycle can be presented as a circle or an infinity loop. It is based on the Agile methodology and focuses on continuous feedback. Not every implementation of the DevOps lifecycle has the same amount of phases, but here are the most common: 
 
-![image info](./Images/DevOps-Lifecycle.jpg)
+![image info](../Images/DevOps-Lifecycle.jpg)
 *DevOps Lifecycle, Source: browserstack.com*
 
 ### Phases
