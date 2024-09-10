@@ -49,6 +49,15 @@ At the meeting the team checks and updates the Kanban board and discusses the ta
 We will write our Frontend in Typescript React and our Backend in Java.
 Every collaborator can use the IDE they prefer.
 
+**Coding Rules**
+
+- Names of classes should be in camel case. 
+- Names of variables and functions should be in lower camel case. 
+- Names should be chosen with purpose behind them. 
+- Code should be written with readability in mind. Readable code should be understood without having to ask somebody else for an explanation to achieve this the code has to be documented and the functions shouldn't have repeated code and should be kept as small as possible. 
+- Logic and endpoints should be unit tested. 
+- The application should be built on the REST principals
+
 ## Database
 
 **Setup**
