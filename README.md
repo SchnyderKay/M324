@@ -106,13 +106,13 @@ The time must be entered to the nearest 15 minutes.
 
 [Time Sheet](https://tbzedu-my.sharepoint.com/:x:/r/personal/kay_schnyder_edu_tbz_ch/_layouts/15/Doc.aspx?sourcedoc=%7B4C0BDA20-4AE3-4985-A780-3F4F67B43329%7D&file=time_logger%201.xlsx&action=default&mobileredirect=true&wdOrigin=TEAMS-WEB.p2p_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1724143689247&web=1)
 
-## Protokoll
+## Protocol
 
 ### 27.08.2024
 
 **Past Tasks**
 
-For today, Luca finished the three-way theory, and Aryan finished the CALMS theory. Both of these inputs will be explained at 10 o'clock for the whole group. The script to create and fill the database should be finished as well and will be tested later in the day. 
+For today, **Luca** finished the three-way theory, and **Aryan** finished the CALMS theory. Both of these inputs will be explained at 10 o'clock for the whole group. The script to create and fill the database should be finished as well and will be tested later in the day. 
 
 **Next Task**
 
@@ -139,3 +139,15 @@ As of today, we as a group will add the descriptions to the Kanban board and fix
 For the rest of the day, **Aryan** and **Jan** will work on the backend and the unit tests, as well as the needed user stories. 
 
 **Kay** works on finishing the DevOps theory and helps the other two as soon as she's finished.
+
+### 10.09.2024
+
+**Next Task**
+
+In todays meeting we discussed that we should start writing tickets regarding the feedback we get from our teacher and implement it. In future we will continue to create tickets based on the feedback we get from our teacher. We also discussed that we should make sure that the project runs on everyone's device.
+ 
+**Luca** should check the criteria for the unit tests and write the protocol for the documentation.
+
+**Kay** and **Jan** will take a look at the user stories **Aryan** wrote last week and will also work on the backend so everything that is due today is done.
+
+The theory part on continues integration will be done by **Aryan**.
