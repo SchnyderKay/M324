@@ -1,24 +1,19 @@
-
 package com.example.demo.domain.drinks;
 
-        import java.util.List;
-        import java.util.UUID;
+import java.util.List;
+import java.util.UUID;
 
-        import com.example.demo.domain.drinks.dto.DrinkDTO;
-        import com.example.demo.domain.drinks.dto.DrinkMapper;
-        import jakarta.validation.Valid;
-        import org.springframework.beans.factory.annotation.Autowired;
-        import org.springframework.http.HttpStatus;
-        import org.springframework.http.ResponseEntity;
-        import org.springframework.validation.annotation.Validated;
-        import org.springframework.web.bind.annotation.DeleteMapping;
-        import org.springframework.web.bind.annotation.GetMapping;
-        import org.springframework.web.bind.annotation.PathVariable;
-        import org.springframework.web.bind.annotation.PostMapping;
-        import org.springframework.web.bind.annotation.PutMapping;
-        import org.springframework.web.bind.annotation.RequestBody;
-        import org.springframework.web.bind.annotation.RequestMapping;
-        import org.springframework.web.bind.annotation.RestController;
+import com.example.demo.core.exception.DrinkAlreadyExistsException;
+import com.example.demo.core.exception.DrinkNotFoundException;
+import com.example.demo.core.exception.ErrorResponse;
+import com.example.demo.domain.drinks.dto.DrinkDTO;
+import com.example.demo.domain.drinks.dto.DrinkMapper;
+import jakarta.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
 
 @Validated
 @RestController
@@ -35,32 +30,78 @@ public class DrinkController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<DrinkDTO> retrieveById(@PathVariable String id) {
-        Drink Drink = drinkService.findById(id);
-        return new ResponseEntity<>(drinkMapper.toDTO(Drink), HttpStatus.OK);
+    public ResponseEntity<DrinkDTO> retrieveDrink(@PathVariable String id) {
+        try {
+            UUID uuid = UUID.fromString(id);
+            Drink drink = drinkService.findById(uuid.toString());
+            return ResponseEntity.ok(drinkMapper.toDTO(drink));
+        } catch (DrinkNotFoundException e) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
     }
 
     @GetMapping({"", "/"})
     public ResponseEntity<List<DrinkDTO>> retrieveAll() {
-        List<Drink> Drinks = drinkService.findAll();
-        return new ResponseEntity<>(drinkMapper.toDTOs(Drinks), HttpStatus.OK);
+        try {
+            List<Drink> drinks = drinkService.findAll();
+            return new ResponseEntity<>(drinkMapper.toDTOs(drinks), HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
 
     @PostMapping("/")
-    public ResponseEntity<DrinkDTO> save(DrinkDTO DrinkDTO) {
-        Drink Drink = drinkService.save( drinkMapper.fromDTO(DrinkDTO));
-        return new ResponseEntity<>(drinkMapper.toDTO(Drink), HttpStatus.OK);
+    public ResponseEntity<DrinkDTO> save(@Valid @RequestBody DrinkDTO drinkDTO) {
+        try {
+            Drink drink = drinkService.save(drinkMapper.fromDTO(drinkDTO));
+            return new ResponseEntity<>(drinkMapper.toDTO(drink), HttpStatus.CREATED);
+        } catch (DrinkAlreadyExistsException e) {
+            return new ResponseEntity<>(HttpStatus.CONFLICT);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<DrinkDTO> updateById(@PathVariable String id, @Valid @RequestBody DrinkDTO DrinkDTO) {
-        Drink Drink = drinkService.updateById(id, drinkMapper.fromDTO(DrinkDTO));
-        return new ResponseEntity<>(drinkMapper.toDTO(Drink), HttpStatus.OK);
+    public ResponseEntity<DrinkDTO> updateById(@PathVariable String id, @Valid @RequestBody DrinkDTO drinkDTO) {
+        try {
+            Drink drink = drinkService.updateById(id, drinkMapper.fromDTO(drinkDTO));
+            return new ResponseEntity<>(drinkMapper.toDTO(drink), HttpStatus.OK);
+        } catch (DrinkNotFoundException e) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteById(@PathVariable String id) {
-        drinkService.deleteById(id);
-        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        try {
+            drinkService.deleteById(id);
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        } catch (DrinkNotFoundException e) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
+
+    @ExceptionHandler(DrinkNotFoundException.class)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    public ResponseEntity<ErrorResponse> handleDrinkNotFoundException(DrinkNotFoundException e) {
+        // Create an ErrorResponse object using the exception message
+        ErrorResponse errorResponse = new ErrorResponse(HttpStatus.NOT_FOUND.value(), e.getMessage());
+        return new ResponseEntity<>(errorResponse, HttpStatus.NOT_FOUND);
+    }
+
+    @ExceptionHandler(DrinkAlreadyExistsException.class)
+    @ResponseStatus(HttpStatus.CONFLICT)
+    public ResponseEntity<ErrorResponse> handleDrinkAlreadyExistsException(DrinkAlreadyExistsException e) {
+        ErrorResponse errorResponse = new ErrorResponse(HttpStatus.NOT_MODIFIED.value(), e.getMessage());
+        return new ResponseEntity<>(errorResponse, HttpStatus.CONFLICT);
+    }
+
+
 }
