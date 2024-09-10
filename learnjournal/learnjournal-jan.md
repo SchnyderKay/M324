@@ -37,3 +37,22 @@ Today was the first day that I was not satisfied with my team. someone was not o
 My task was to complete the skeleton and then write unit tests. 
 Combining the database with the existing backend led to various problems and I had to fall back on the help of my team again and again. They were happy to help me even when they were behind schedule with their task. 
 Fortunately, we were all able to complete our task in the end 
+
+# 10.09.2024
+
+**Teamwork**
+
+We were able to work better as a team today because the tasks were easier to divide up. 
+Communication between the individual tasks was also better. 
+As a team, we are generally happy that we can work together as a team and not separately, as it is easier to communicate quickly in the event of minor uncertainties.
+
+
+**My work**
+*Unit tests*
+
+We (Kay and I) started by comparing my unit tests with the given criteria. we quickly realized that although the unit tests were good, a bad example was missing for each case. we adjusted and completed this during the course of the morning. 
+
+*Errorhandler*
+
+To create the bad examples, we also had to create an error handling system. 
+This was the only way to ensure that the tests we created would actually work. 
