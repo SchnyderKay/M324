@@ -51,8 +51,6 @@ To implement Continuous Testing effectively, several practices and tools must be
 
 ![My Image](../Images/CI:CD.png)
  
-
-
 #### 1. **CI/CD Pipeline Integration**
 
 Continuous Testing is integrated into **Continuous Integration (CI)** and **Continuous Delivery (CD)** pipelines. These pipelines automate the process of building, testing, and deploying code, ensuring that tests are run at every stage of development. For example:
@@ -235,8 +233,6 @@ Workflow form Gitlab working with Pipelines.
 - Still requires careful management to avoid conflicts between branches.
 - May not be suitable for smaller projects or teams.
 
----
-
 ### Why You Need a Branching Strategy
 
 An effective branching strategy ensures a **smooth development workflow** and helps:
@@ -244,11 +240,6 @@ An effective branching strategy ensures a **smooth development workflow** and he
 - Enable **parallel workstreams** for faster development.
 - Organize **structured releases** without hindering the production environment.
 - Maintain a **bug-free** and stable codebase, ensuring quick fixes and releases without disruption.
-
----
-Here's a rewritten version of the section with the updates included:
-
----
 
 ## How We Implemented Our Branching Strategy
 
@@ -280,14 +271,10 @@ Here’s a visual representation of how we structured our branching model:
 
 This diagram illustrates the management of the main `develop/Feature`, `Theory`, and `personal` branches, and how code flows from development to production.
 
----
-
 By implementing a clear branching strategy and integrating it with our pipeline, we have been able to:
 - **Accelerate development** while maintaining quality.
 - Ensure that our **main branch is always stable**.
 - Allow teams to **work independently** without affecting the main codebase.
-
-
 
 ## How can commits and branches be linked to user stories?
 
@@ -296,12 +283,6 @@ Commits and branches can be easily linked to user stories through ticket numbers
 In our project, we use ticket numbers to identify the correlation between a branch and a ticket. We normally don't use the link feature on GitHub, because it closes the tickets with a closed merge request, which isn't working for our collaboration. 
 
 ## What merge strategies are there and how are they implemented?
-
-Certainly! Here’s a more detailed markdown section on merge strategies, including an in-depth look at how they are implemented in your project:
-
----
-
-## What Merge Strategies Are There and How Are They Implemented?
 
 Merge strategies are crucial for managing how code changes from different branches are combined into a single branch. These strategies help maintain an organized codebase and prevent conflicts during integration. Below is a detailed explanation of common merge strategies and how we implement them in our project.
 
@@ -393,16 +374,6 @@ Below is a visual representation of how a pull request looks like on Github
 ![Branching and Merging Strategy Diagram](../Images//Pullrequest.png)
 
 This diagram illustrates how our main `master`, `develop`, and `feature` branches interact and how code flows from development through review to production.
-
----
-
-
-
-## What is semantic versioning and how is it implemented?
-
-Here’s a detailed explanation of **semantic versioning** and how it is implemented in markdown format:
-
----
 
 ## What is Semantic Versioning and How is it Implemented?
 
@@ -496,15 +467,6 @@ Consider a software project with the following version history:
 - Use pre-release tags for unstable or experimental features (e.g., `2.0.0-beta.1`).
 - If in doubt, be conservative: prefer minor and patch updates unless a breaking change is unavoidable.
 
----
-
-
-## What is the difference between monorepo and multirepo (especially in the context of microservices)?
-
-Here’s the markdown explanation on **the difference between monorepo and multirepo, especially in the context of microservices**:
-
----
-
 ## What is the Difference Between Monorepo and Multirepo (Especially in the Context of Microservices)?
 
 ### Monorepo
@@ -566,14 +528,6 @@ Microservices architecture emphasizes the **independence** and **modularity** of
 ### Conclusion
 
 The choice between **monorepo** and **multirepo** for microservices depends on the needs of the project, team structure, and level of service independence. While monorepos offer simpler code sharing and atomic changes, they can become difficult to scale as the number of services grows. Multirepos, on the other hand, provide better isolation and modularity, but may require more effort to manage shared dependencies and cross-service changes.
-
-
-
-
-## What is an artifact repository and what role does it play in your process?
-Here’s the markdown explanation on **what an artifact repository is and the role it plays in the development process**:
-
----
 
 ## What is an Artifact Repository and What Role Does It Play in Your Process?
 
@@ -657,8 +611,6 @@ In our process:
 ### Conclusion
 
 In summary, an **artifact repository** plays a vital role in the software development lifecycle by managing the storage, versioning, and distribution of build artifacts. It ensures consistency across environments, simplifies dependency management, and integrates seamlessly with CI/CD pipelines. By using an artifact repository, teams can streamline their development processes, improve collaboration, and ensure that only tested, secure artifacts are deployed to production.
-
----
 
 ## Sources
 
