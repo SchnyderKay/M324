@@ -185,7 +185,7 @@ The **GitFlow** branching strategy is designed for projects that require paralle
 - **Hotfix Branches**: Created when an urgent bug fix is required on the production code.
 
 
-![My Image](../Images/GitWorkFlow.png)
+![My Image](../Images/GitWorkflow.png)
 An Image of the basic workflow git workflow. This is the fundamental workflow.
 
 **Pros**:
@@ -204,7 +204,7 @@ An Image of the basic workflow git workflow. This is the fundamental workflow.
 - Once the feature is complete and tested, it is merged back into `main`.
 - The `main` branch is always in a deployable state.
 
-![My Image](../Images/gitHub.png)
+![My Image](../Images/GithubWorkflow.png)
 An image of a Github workflow when working with branches.
 
 **Pros**:
@@ -222,8 +222,8 @@ An image of a Github workflow when working with branches.
 - Developers work on **feature branches** that are merged into `main`.
 - When the `main` branch is ready for deployment, it is merged into the **production branch**.
 
-![My Image](../Images/GitLab_CI:CD_Workflow.png)
-Workflow form Gitlab working with Pipelines.
+![My Image](../Images/GitlabWorkflow.png)
+Workflow form Gitlab.
 
 **Pros**:
 - Provides **isolation between environments**, reducing the risk of deploying unstable code.
@@ -267,7 +267,7 @@ We do not push changes directly to the `main` branch and do not have a release b
 
 Here’s a visual representation of how we structured our branching model:
 
-![Branching Strategy Diagram](../Images//OurWorkbranch.png)
+![Branching Strategy Diagram](../Images/Ourworkflow.png)
 
 This diagram illustrates the management of the main `develop/Feature`, `Theory`, and `personal` branches, and how code flows from development to production.
 
@@ -371,7 +371,7 @@ In our project, we adhere to a well-defined merge strategy to ensure clarity and
 
 Below is a visual representation of how a pull request looks like on Github
 
-![Branching and Merging Strategy Diagram](../Images//Pullrequest.png)
+![Branching and Merging Strategy Diagram](../Images/PullRequest.png)
 
 This diagram illustrates how our main `master`, `develop`, and `feature` branches interact and how code flows from development through review to production.
 
@@ -513,7 +513,7 @@ A **multirepo** (or multiple repositories) strategy involves storing the code fo
 
 Microservices architecture emphasizes the **independence** and **modularity** of each service. The choice between monorepo and multirepo directly impacts how these services are developed, deployed, and maintained.
 
-![Monorepo](../Images/Monorepo.png)
+![Monorepo](../Images/MultiRepo.png)
 
 #### When to Use Monorepo for Microservices:
 - **Tightly coupled microservices**: When microservices are highly interdependent and share many libraries, a monorepo can simplify the process of managing shared code and deploying changes.
