@@ -56,3 +56,7 @@ We (Kay and I) started by comparing my unit tests with the given criteria. we qu
 
 To create the bad examples, we also had to create an error handling system. 
 This was the only way to ensure that the tests we created would actually work. 
+
+**Feedback Yves**
+Mir ist im Journal vor allem die Reflektion wichtig. Was kann man verbessern. Wie nimmst du den Prozess war. Wie ist die Zusammenarbeit. Versuche also zu reflektieren - nicht nur oberflächlich.
+Was du gemacht hast, sehe ich in den Tasks, das ist hier nicht mehr wichtig. 
