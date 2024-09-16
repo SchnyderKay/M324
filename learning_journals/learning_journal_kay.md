@@ -20,3 +20,6 @@ Today was hard to work as a team, because one of our teammates hadn't been avail
 ## 10.09.2024
 
 Today was a really productive day. Jan and I worked on revising the Application and adding error handling and additional Unit-Tests. This was possible, because we managed to reduce our workload for the day. This was possible, because all of us managed to work hard, and Aryan and Luca focused on the documentation and the theory, so Jan and I had time. Our working strategy gets better and better. I take care of creating and managing most tickets, so the Kanban board stays up-to date and everyone can find a task to work on. During the next week, I'll prepare myself for the meeting by creating additional tickets and a plan on how to proceed. This helps me to manage some chaos and keep an eye on everything that needs to be done.
+
+**Feedback Yves**: Eigentlich das gleiche Feedback wie am 27.08. Es geht hier mehr um eine Reflektion als darum was du gemacht hast. Was könnte man verbessern in eurem Prozess oder was war der Prozess den ihr durchlaufen seit. Wie ist das Modul für dich persönlich und was nimmst du mit, resp. steckst du rein etc. 
+Du fokusierst dich darauf was du gemacht hast, aber das ist nicht ganz so wichtig in diesem Modul.
