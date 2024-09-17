@@ -64,7 +64,7 @@ Every collaborator can use the IDE they prefer.
 
 ## Database
 
-**Setup**
+### Manuel Setup
 
 To setup the Docker container use the command given below
 ```
@@ -96,13 +96,14 @@ When the container is running you can start DBeaver and follow the instructions:
 
 Insert the SQL statement given 
 
-[SQL file](./drinks_db.sql) 
+[SQL file](DrinkDomain-main/backend/drinks_db.sql) 
 
 🔴 Afterwards click the run script to create a table with data.
 
 ![step 4](./Images/4.png)
 
-**Start the backend**
+### Start Backend and DB
+
 To start the backend, a terminal must be started in the IDE. 
 In the terminal, navigate to the backend using ‘cd’ and execute the following command:
 
