@@ -57,6 +57,25 @@ We (Kay and I) started by comparing my unit tests with the given criteria. we qu
 To create the bad examples, we also had to create an error handling system. 
 This was the only way to ensure that the tests we created would actually work. 
 
+# 17.09.2024
+
+**Teamwork**
+
+Working together has gone very well. 
+We are beginning to know who is working on what and where the difficulties lie. 
+Our biggest problem at the moment is the internet. we are losing a lot of time waiting for the pipeline or the backend to build and run. 
+Aryan has volunteered to continue the documentation and luca to connect everything to AWS. 
+I'm glad that we don't have any verbal complications and that we can agree very quickly. 
+Everyone is working and helping each other and the project is taking shape.
+
+**Improvement**
+
+I think we can improve on the division as soon as the tasks allow it. 
+Luca started helping us with the programming today. 
+In the long term, kay and i should also take over part of the documentation and involve aryan in programming as well,
+so everyone has the opportunity to contribute.
+
+
 **Feedback Yves**
 Mir ist im Journal vor allem die Reflektion wichtig. Was kann man verbessern. Wie nimmst du den Prozess war. Wie ist die Zusammenarbeit. Versuche also zu reflektieren - nicht nur oberflächlich.
 Was du gemacht hast, sehe ich in den Tasks, das ist hier nicht mehr wichtig. 
