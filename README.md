@@ -185,7 +185,7 @@ DB in Dockerfile:
 Jan is working alongside Jan to complete the database setup in the Dockerfile.
 Integration Tests: 
 Jan is also working on implementing integration tests. These tests should be executed to validate the interactions between different components of the system.
-Integration Tests in Pipeline: He will integrate the automated execution of the tests within the CI/CD pipeline, ensuring that they are run during each build to catch issues early.
+Integration Tests in Pipeline: He will integrate the automated execution of the tests within the CI pipeline, ensuring that they are run during each build to catch issues early.
 Application Version 2 (Optional): Kay and Jan may also begin work on a second version of the application, depending on the progress of the pipeline setup.
 
 **Aryan:**
@@ -209,5 +209,5 @@ Luca will also gather relevant information and resources to help or even start i
 DB in Dockerfile: 
 Kay was responsible for ensuring the database setup is included in the Dockerfile. The task involved setting up the database so that it is consistently available within the Docker environment.
 Completing the Pipeline: 
-Kay’s primary responsibility is finishing the CI/CD pipeline setup, ensuring that all components (testing, building, deployment) are functioning correctly and efficiently.
+Kay’s primary responsibility is finishing the CI pipeline setup, ensuring that all components (testing, building, deployment) are functioning correctly and efficiently.
 Application Version 2 (Optional): Kay and Jan may also begin work on a second version of the application, depending on the progress of the pipeline setup.
