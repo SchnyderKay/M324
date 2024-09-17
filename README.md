@@ -108,6 +108,13 @@ In the terminal, navigate to the backend using ‘cd’ and execute the followin
 
 ``` docker-compose up -d ```
 
+## CI Pipeline
+
+Our CI Pipeline is there to check, that the project is built and that the tests do not have any errors.
+The backend and the projects are built with Gradle on an Ubuntu base.
+Additionally, a Docker image is being created, which contains the DB and the backend.
+The image and the test report are saved as artifacts.
+
 ## Time
 
 Every collaborator must fill in his own time on the time sheet.
