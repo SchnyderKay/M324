@@ -169,3 +169,45 @@ In todays meeting we discussed that we should start writing tickets regarding th
 **Kay** and **Jan** will take a look at the user stories **Aryan** wrote last week and will also work on the backend so everything that is due today is done.
 
 The theory part on continues integration will be done by **Aryan**.
+
+### 17.09.2024
+
+**Next Task**
+
+Feedback:
+
+The overall feedback was positive.
+We will work on improving the infomations and tips given in the feedback.
+
+**Jan:**
+
+DB in Dockerfile: 
+Jan is working alongside Jan to complete the database setup in the Dockerfile.
+Integration Tests: 
+Jan is also working on implementing integration tests. These tests should be executed to validate the interactions between different components of the system.
+Integration Tests in Pipeline: He will integrate the automated execution of the tests within the CI/CD pipeline, ensuring that they are run during each build to catch issues early.
+Application Version 2 (Optional): Kay and Jan may also begin work on a second version of the application, depending on the progress of the pipeline setup.
+
+**Aryan:**
+
+Branching Strategy: 
+Aryan is responsible for setting up and documenting the branching strategy. 
+This includes defining how features, bug fixes, and releases will be managed within version control to maintain a clean and organized codebase.
+CD Theory: 
+Aryan also provided an overview of Continuous Deployment (CD) principles, highlighting the theoretical concepts that the team should follow in practice.
+
+**Luca:**
+
+Setting up CD: 
+Luca is tasked with researching and setting up the Continuous Deployment process. 
+He will focus on automating deployments and ensure that updates can be reliably and quickly delivered to the production environment.
+Researching Information: 
+Luca will also gather relevant information and resources to help or even start implement the CD process effectively.
+
+**Kay:**
+
+DB in Dockerfile: 
+Kay was responsible for ensuring the database setup is included in the Dockerfile. The task involved setting up the database so that it is consistently available within the Docker environment.
+Completing the Pipeline: 
+Kay’s primary responsibility is finishing the CI/CD pipeline setup, ensuring that all components (testing, building, deployment) are functioning correctly and efficiently.
+Application Version 2 (Optional): Kay and Jan may also begin work on a second version of the application, depending on the progress of the pipeline setup.
