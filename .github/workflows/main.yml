@@ -31,3 +31,29 @@ jobs:
         with:
           name: test-report
           path: ./DrinkDomain-main/backend/build/reports/tests/test/index.html
+
+      - name: Install Docker Compose
+        run: |
+          sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+          sudo chmod +x /usr/local/bin/docker-compose
+
+      - name: Pull PostgreSQL image
+        run: docker pull postgres
+
+      - name: Build Docker image
+        run: docker-compose -f ./DrinkDomain-main/backend/docker-compose.yaml build
+
+      - name: Get image name
+        id: get_image_name
+        run: |
+          IMAGE_NAME=$(docker-compose -f ./DrinkDomain-main/backend/docker-compose.yaml config --services | head -n 1)
+          echo "IMAGE_NAME=$IMAGE_NAME" >> $GITHUB_ENV
+
+      - name: Save Docker image as artifact
+        run: docker save $IMAGE_NAME > image.tar
+
+      - name: Upload Docker image as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: docker-image
+          path: image.tar
