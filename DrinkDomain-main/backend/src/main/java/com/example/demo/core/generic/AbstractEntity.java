@@ -19,9 +19,9 @@ import org.hibernate.annotations.GenericGenerator;
 public abstract class AbstractEntity {
 
   @Id
-  @GeneratedValue(generator = "id2")
-  @GenericGenerator(name = "id2", strategy = "id2")
-  @Column(columnDefinition = "id", name = "id", updatable = false, nullable = false)
-  private String id;
+  @GeneratedValue(generator = "uuid2")
+  @GenericGenerator(name = "uuid2", strategy = "uuid2")
+  @Column(columnDefinition = "uuid", name = "id", updatable = false, nullable = false)
+  private UUID id;
 
 }
