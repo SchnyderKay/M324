@@ -33,7 +33,7 @@ public class Role extends AbstractEntity {
   private Set<Authority> authorities = new HashSet<>();
 
   public Role(UUID id, String name, Set<Authority> authorities) {
-    super(id.toString());
+    super(id);
     this.name = name;
     this.authorities = authorities;
   }

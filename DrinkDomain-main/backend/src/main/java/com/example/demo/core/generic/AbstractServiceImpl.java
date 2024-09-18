@@ -20,7 +20,7 @@ public abstract class AbstractServiceImpl<T extends AbstractEntity> implements A
   }
 
   @Override
-  public void deleteById(String id) throws NoSuchElementException {
+  public void deleteById(UUID id) throws NoSuchElementException {
     if (repository.existsById(id)) {
       repository.deleteById(id);
     } else {
@@ -29,7 +29,7 @@ public abstract class AbstractServiceImpl<T extends AbstractEntity> implements A
   }
 
   @Override
-  public T updateById(String id, T entity) throws NoSuchElementException {
+  public T updateById(UUID id, T entity) throws NoSuchElementException {
     if (repository.existsById(id)) {
       entity.setId(id);
       return repository.save(entity);
@@ -50,12 +50,12 @@ public abstract class AbstractServiceImpl<T extends AbstractEntity> implements A
   }
 
   @Override
-  public T findById(String id) {
+  public T findById(UUID id) {
     return repository.findById(id).orElseThrow(NoSuchElementException::new);
   }
 
   @Override
-  public boolean existsById(String id) {
+  public boolean existsById(UUID id) {
     return repository.existsById(id);
   }
 
