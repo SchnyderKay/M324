@@ -26,3 +26,7 @@ Du fokusierst dich darauf was du gemacht hast, aber das ist nicht ganz so wichti
 
 ## 17.09.2024
 Today, we didn't work a lot together. In our daily meeting, we were quickly able to distribute the tasks and start working. Afterward, the work was done without bigger problems. Our task distribution is similar to before. Jan works on the application, Aryan works on the theory, Luca works on the CD pipeline and I finish the CI pipeline. I think our process is quick and efficient. There weren't any issues or problems during the morning. Everyone works on what they were assigned, and even if some are distracted during the work, they finish everything before the deadline. I'm happy with how it works, and with our current efficiency and effort, I don't think we will have a stressful time. This module sadly doesn't show me as well as I wish it would how the DevOps process should work and who is responsible for what. But otherwise, I can learn again about pipelines and deployment, but that is not the intended purpose of this module.
+
+**Feedback Yves**
+"This module sadly doesn't show me as well as I wish it would how the DevOps process should work and who is responsible for what. But otherwise, I can learn again about pipelines and deployment, but that is not the intended purpose of this module." 
+--> Ist das nicht genau das was wir machen?
