@@ -77,3 +77,85 @@ Our ability to collaborate effectively has improved, especially in setting up th
 This week has been particularly challenging due to the time pressure we’re under. With the deadline looming next week and one of our team members absent for two weeks in a row, we’ve had to pick up the slack and work extra hours at home to stay on track. 
 
 Despite the stress, our team’s morale remains high, and we’ve managed to maintain a positive working environment. The vibe in the team is still good, which is helping us cope with the heavy workload. We’re confident that we can meet the deadline, but it’s going to be a close call. The next few days will be critical, and we’ll need to keep up the pace to ensure we deliver everything on time.
+
+
+# 10 September 2024
+
+## Tickets Worked On:
+- Write CI-Theory
+- Fix User Stories
+- Write Documentation
+
+## Theory of the Day: Continuous Integration (CI)
+
+### What is Continuous Integration and How is it Implemented?
+Continuous Integration (CI) is a software development strategy designed to detect bugs and errors early by committing smaller, more frequent changes to the codebase. The idea is that with more frequent updates, it's easier to identify and isolate issues before they grow into larger problems. 
+
+CI heavily relies on version control, such as Git, to organize and structure the project’s history, ensuring that every change is properly tracked.
+
+The integration process can either be automated or manual. For example, tools like Jenkins and GitHub Actions allow developers to write automated pipelines that run tests on newly submitted code to check for errors. These pipelines can also build and package the project, ensuring consistent output and minimizing the chances of introducing instability into the project.
+
+By adopting CI, teams are able to improve software quality, keep the codebase consistent, and collaborate more effectively.
+
+### What are the Advantages and Disadvantages of CI?
+#### Advantages:
+- **Early Detection of Errors:** CI allows teams to spot and fix errors early in the development process, which helps maintain a stable codebase.
+- **Real-time Feedback:** Developers receive immediate feedback on their code changes, enabling quicker iterations and better collaboration.
+- **Reduced Integration Risk:** CI ensures that code changes are frequently integrated, avoiding the stressful last-minute rush to merge code before a release.
+- **Faster Releases:** By maintaining a stable codebase, CI allows for faster and more reliable software releases.
+
+#### Disadvantages:
+- **Requires Setup and Maintenance:** Setting up CI tools and writing automated tests can be time-consuming and may require ongoing maintenance.
+- **Test Coverage Needed:** If the test suite isn't comprehensive, CI may not catch every bug or issue, which could result in a false sense of security.
+  
+## Reflection:
+We were able to catch up on a lot of tasks because I worked overtime from home. I completed many of the tickets, which were mostly theoretical and documentation-heavy. While I find it frustrating to focus on writing instead of coding, I recognize that this is part of the process and a team effort.
+
+Some frustration also stems from the fact that our team is stuck on the coding portion, which affects our progress. But as a team player, I know that these tasks—though not my favorite—are necessary to ensure that we stay on track. At the end of the day, I’m okay with the tasks I completed, though I didn’t learn much new beyond reinforcing the core concepts of CI.
+
+
+
+# Learning Journal - 17 September 2024
+
+## Tickets Worked On:
+- Theory CD Task
+- CI Theory Fixing
+- Learning Journal
+
+## Theory of the Day: Continuous Deployment (CD)
+
+### What is Continuous Deployment and How is it Implemented?
+
+**Introduction to Continuous Deployment**  
+Continuous Deployment (CD) is a software development practice that automates the entire release process, allowing code changes to be automatically deployed to production environments once they pass a series of automated tests. Unlike traditional methods that require manual approval for releases, CD aims to streamline and speed up the process by eliminating manual intervention. CD is a core aspect of DevOps and significantly impacts how modern software is delivered, fostering a faster, more efficient release cycle.
+
+In a continuous deployment workflow, every change that passes automated testing is immediately deployed to production. This method enables teams to push out new features, improvements, and bug fixes quickly while maintaining system stability and code quality.
+
+### Key Concepts of Continuous Deployment
+
+1. **Automated Testing**  
+   Automated testing is essential to the CD process. Before any code is deployed to production, it must pass a suite of automated tests that ensure its correctness and functionality. Common types of tests include:
+   - **Unit Tests**: Check individual code components for expected behavior.
+   - **Integration Tests**: Verify that different parts of the application interact correctly.
+   - **End-to-End Tests**: Simulate real user interactions and test the system's overall functionality.
+   
+   These tests help ensure that changes won’t introduce bugs or regressions in production.
+
+2. **CI/CD Pipelines**  
+   A CI/CD pipeline is a sequence of automated steps that build, test, and deploy code. For continuous deployment, this pipeline is critical as it ensures a smooth, automated transition from code integration to deployment. A typical CI/CD pipeline includes:
+   - **Code Integration**: Once new code is merged into the main branch, the pipeline is triggered.
+   - **Automated Build**: The system compiles the new code and prepares it for testing.
+   - **Automated Testing**: The code goes through a series of automated tests.
+   - **Automated Deployment**: Once the tests pass, the code is automatically deployed to production.
+
+CD allows for faster, more reliable deployments, improving software quality and team productivity.
+
+---
+
+## Reflection:
+Today was the first time during this module that everything went exceptionally well. We were finally able to submit tasks without needing to work from home, which felt like a huge relief. The only exception was some of the theory work, but even that didn’t require staying up late or putting in extra hours. 
+
+It felt great to work within the normal schedule and still get everything done. Our progress today really demonstrated how much we've grown as a team. We were able to tackle both practical and theoretical tasks, and for the first time, it felt like we were really in control of the process.
+
+Having the freedom to work solely on the theory at home also meant that when we were together, we could focus on actual coding and technical work, which I find much more engaging. The workflow seemed smoother, and we are finally approaching the point where everything is starting to fall into place. 
+
