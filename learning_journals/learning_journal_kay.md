@@ -30,3 +30,6 @@ Today, we didn't work a lot together. In our daily meeting, we were quickly able
 **Feedback Yves**
 "This module sadly doesn't show me as well as I wish it would how the DevOps process should work and who is responsible for what. But otherwise, I can learn again about pipelines and deployment, but that is not the intended purpose of this module." 
 --> Ist das nicht genau das was wir machen?
+
+## 24.09.2024
+This week, we weren't very productive. Because Luca works alone and didn't need any help, according to him, the rest of us worked on refining. So the rest of us worked on refining the documentation and the CI pipeline. Because, we don't have to work for specified hand ins, we sometimes kind of lose the flow. For next time, it may be helpful to create specific timeframes for what needs to be finished and what additional future tasks could be. So even if this wasn't the best week, the team spirit is still good, and if help is needed, we help each other without problems. 
