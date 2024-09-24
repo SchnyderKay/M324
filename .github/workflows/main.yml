@@ -3,7 +3,10 @@ name: Docker Build and Test
 on:
   push:
     branches:
-      - '**'
+      - '**'    # Runs on all branches
+  pull_request:
+    branches:
+      - '**'    # Runs on pull requests targeting all branches
 
 jobs:
   build-and-test:
@@ -16,7 +19,6 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '18'
-          distribution: 'adopt'
 
       - name: Build with Gradle
         run: gradle build -x test
@@ -26,6 +28,12 @@ jobs:
         run: gradle test
         working-directory: ./DrinkDomain-main/backend/
 
+  upload-artifacts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        
       - name: Upload test report
         uses: actions/upload-artifact@v3
         with:
