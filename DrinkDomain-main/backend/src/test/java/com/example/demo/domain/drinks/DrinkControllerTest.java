@@ -51,17 +51,17 @@ public class DrinkControllerTest {
        DrinkDTO drinkDTO = new DrinkDTO();
        drinkDTO.setId(id);
        Drink drink = new Drink();
-       drink.setId(id.toString());
+       drink.setId(id);
 
-       when(drinkService.findById(id.toString())).thenReturn(drink);
+       when(drinkService.findById(id)).thenReturn(drink);
        when(drinkMapper.toDTO(drink)).thenReturn(drinkDTO);
 
        mockMvc.perform(get("/drink/{id}", id))
                .andExpect(status().isOk())
                .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-               .andExpect(jsonPath("$.id").value(id.toString()));
+               .andExpect(jsonPath("$.id").value(id));
 
-       verify(drinkService, times(1)).findById(id.toString());
+       verify(drinkService, times(1)).findById(id);
        verify(drinkMapper, times(1)).toDTO(drink);
    }
 
@@ -171,7 +171,7 @@ public class DrinkControllerTest {
         Drink drink = new Drink();
 
         when(drinkMapper.fromDTO(any(DrinkDTO.class))).thenReturn(drink);
-        when(drinkService.updateById(eq(id.toString()), any(Drink.class))).thenReturn(drink);
+        when(drinkService.updateById(eq(id), any(Drink.class))).thenReturn(drink);
         when(drinkMapper.toDTO(any(Drink.class))).thenReturn(drinkDTO);
 
         mockMvc.perform(put("/drink/{id}", id)
@@ -181,7 +181,7 @@ public class DrinkControllerTest {
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON));
 
         verify(drinkMapper, times(1)).fromDTO(any(DrinkDTO.class));
-        verify(drinkService, times(1)).updateById(eq(id.toString()), any(Drink.class));
+        verify(drinkService, times(1)).updateById(eq(id), any(Drink.class));
         verify(drinkMapper, times(1)).toDTO(any(Drink.class));
     }
 
@@ -199,7 +199,7 @@ public class DrinkControllerTest {
                 .andExpect(status().isBadRequest());
 
         verify(drinkMapper, times(0)).fromDTO(any(DrinkDTO.class));
-        verify(drinkService, times(0)).updateById(eq(id.toString()), any(Drink.class));
+        verify(drinkService, times(0)).updateById(eq(id), any(Drink.class));
     }
 
     /**
@@ -210,12 +210,12 @@ public class DrinkControllerTest {
     public void testDeleteById_GoodOutcome() throws Exception {
         UUID id = UUID.randomUUID();
 
-        doNothing().when(drinkService).deleteById(id.toString());
+        doNothing().when(drinkService).deleteById(id);
 
         mockMvc.perform(delete("/drink/{id}", id))
                 .andExpect(status().isNoContent());
 
-        verify(drinkService, times(1)).deleteById(id.toString());
+        verify(drinkService, times(1)).deleteById(id);
     }
 
     /**
@@ -226,11 +226,11 @@ public class DrinkControllerTest {
     public void testDeleteById_BadOutcome() throws Exception {
         UUID id = UUID.randomUUID();
 
-        doThrow(new RuntimeException("Drink not found")).when(drinkService).deleteById(id.toString());
+        doThrow(new RuntimeException("Drink not found")).when(drinkService).deleteById(id);
 
         mockMvc.perform(delete("/drink/{id}", id))
                 .andExpect(status().isInternalServerError());
 
-        verify(drinkService, times(1)).deleteById(id.toString());
+        verify(drinkService, times(1)).deleteById(id);
     }
 }

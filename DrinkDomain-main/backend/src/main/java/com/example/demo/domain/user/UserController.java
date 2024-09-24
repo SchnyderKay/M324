@@ -36,7 +36,7 @@ public class UserController {
 
   @GetMapping("/{id}")
   public ResponseEntity<UserDTO> retrieveById(@PathVariable UUID id) {
-    User user = userService.findById(id.toString());
+    User user = userService.findById(id);
     return new ResponseEntity<>(userMapper.toDTO(user), HttpStatus.OK);
   }
 
@@ -60,14 +60,14 @@ public class UserController {
   @PreAuthorize(
       "hasAuthority('USER_MODIFY') && @userPermissionEvaluator.isUserAboveAge(authentication.principal.user,18)")
   public ResponseEntity<UserDTO> updateById(@PathVariable UUID id, @Valid @RequestBody UserDTO userDTO) {
-    User user = userService.updateById(id.toString(), userMapper.fromDTO(userDTO));
+    User user = userService.updateById(id, userMapper.fromDTO(userDTO));
     return new ResponseEntity<>(userMapper.toDTO(user), HttpStatus.OK);
   }
 
   @DeleteMapping("/{id}")
   @PreAuthorize("hasAuthority('USER_DELETE')")
   public ResponseEntity<Void> deleteById(@PathVariable UUID id) {
-    userService.deleteById(id.toString());
+    userService.deleteById(id);
     return new ResponseEntity<>(HttpStatus.NO_CONTENT);
   }
 }

@@ -33,7 +33,7 @@ public class DrinkController {
     public ResponseEntity<DrinkDTO> retrieveDrink(@PathVariable String id) {
         try {
             UUID uuid = UUID.fromString(id);
-            Drink drink = drinkService.findById(uuid.toString());
+            Drink drink = drinkService.findById(uuid);
             return ResponseEntity.ok(drinkMapper.toDTO(drink));
         } catch (DrinkNotFoundException e) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
@@ -65,7 +65,7 @@ public class DrinkController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<DrinkDTO> updateById(@PathVariable String id, @Valid @RequestBody DrinkDTO drinkDTO) {
+    public ResponseEntity<DrinkDTO> updateById(@PathVariable UUID id, @Valid @RequestBody DrinkDTO drinkDTO) {
         try {
             Drink drink = drinkService.updateById(id, drinkMapper.fromDTO(drinkDTO));
             return new ResponseEntity<>(drinkMapper.toDTO(drink), HttpStatus.OK);
@@ -77,7 +77,7 @@ public class DrinkController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteById(@PathVariable String id) {
+    public ResponseEntity<Void> deleteById(@PathVariable UUID id) {
         try {
             drinkService.deleteById(id);
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
