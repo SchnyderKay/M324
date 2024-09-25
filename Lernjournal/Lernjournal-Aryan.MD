@@ -59,7 +59,7 @@ This week was productive as we completed several key tasks, including finalizing
 
 Our ability to collaborate effectively has improved, especially in setting up the project infrastructure and organizing our workflow through backlog tickets. This structured approach is helping us stay on track and ensuring that everyone is clear on their responsibilities. Overall, the progress we’ve made this week has been encouraging, and we are well-prepared for the next steps.
 
-## 3 September 2024
+## Learning Journal Entry - 3 September 2024
 
 ### Activities
 
@@ -79,7 +79,7 @@ This week has been particularly challenging due to the time pressure we’re und
 Despite the stress, our team’s morale remains high, and we’ve managed to maintain a positive working environment. The vibe in the team is still good, which is helping us cope with the heavy workload. We’re confident that we can meet the deadline, but it’s going to be a close call. The next few days will be critical, and we’ll need to keep up the pace to ensure we deliver everything on time.
 
 
-# 10 September 2024
+# Learning Journal Entry - 10 September 2024
 
 ## Tickets Worked On:
 - Write CI-Theory
@@ -159,3 +159,19 @@ It felt great to work within the normal schedule and still get everything done. 
 
 Having the freedom to work solely on the theory at home also meant that when we were together, we could focus on actual coding and technical work, which I find much more engaging. The workflow seemed smoother, and we are finally approaching the point where everything is starting to fall into place. 
 
+
+# Learning Journal Entry - 24 September 2024
+
+## Tasks Worked On
+- **Fixing Branching Strategy**: Refined and adjusted the branching strategy for the project to improve collaboration and efficiency in version control.
+- **Documentation**: Focused on updating and writing new documentation for the module. This involved improving clarity and ensuring all procedures and workflows are properly documented.
+- **Theory**: Spent some time revisiting theoretical aspects to ensure the documentation is well-grounded in both practical and theoretical knowledge.
+
+## Reflection
+This week was quite different as the deadlines for the feature tasks were pushed back by a week. Our module teacher discovered that we actually have 10 weeks instead of 9, which provided us with some much-needed breathing room. This extension made a lot of the tasks feel more manageable and less rushed. 
+
+I didn’t pick up anything particularly new during this module. Most of my time was spent working on documentation and refining the branching strategy, which is something I'm already comfortable with. Writing documentation is not something I mind; I’ve done a lot of it in the past, so it feels like second nature to me at this point.
+
+The extra week has been a huge relief. It means I can take my time and avoid stressing or working overtime at home. I feel like I have more freedom now, which is great. There’s no pressure, and I don’t feel suffocated by deadlines. It also allows me to be more thorough in fixing any errors that may come up. 
+
+Overall, the week has gone really well. It's been more relaxing, which makes the work more enjoyable and productive. When you’re not under constant pressure, you have more room to absorb information, reflect on your work, and, ultimately, learn more.
