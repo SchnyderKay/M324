@@ -82,3 +82,18 @@ so everyone has the opportunity to contribute.
 **Feedback Yves**
 Das ist deutlicher am Prozess. Danke. Das Problem mit den Pipelines lässt sich kaum lösen. Die dauern leider einfach und man verbringt Zeit mit warten. Evtl. kann man dazwischen Theorieaufgaben lösen. 
 
+# 24.09.2024
+
+**Teamwork**
+
+This week went badly for the process. 
+My PC broke down and I could only provide moral support. 
+Overall, we struggled to concentrate on the work and decided to make up for lost time. 
+
+**Improvement**
+
+We discussed the feedback and are satisfied as a team. 
+As a team, we were able to identify the strengths and weaknesses of our work and improve where possible. 
+In the future, working together will be easier and the team seems to be looking forward to it, as the theory is no longer necessary and we can work together more as DevOps. 
+This will be a positive change for Aryan in particular. 
+
