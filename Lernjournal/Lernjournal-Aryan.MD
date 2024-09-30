@@ -175,3 +175,6 @@ I didn’t pick up anything particularly new during this module. Most of my time
 The extra week has been a huge relief. It means I can take my time and avoid stressing or working overtime at home. I feel like I have more freedom now, which is great. There’s no pressure, and I don’t feel suffocated by deadlines. It also allows me to be more thorough in fixing any errors that may come up. 
 
 Overall, the week has gone really well. It's been more relaxing, which makes the work more enjoyable and productive. When you’re not under constant pressure, you have more room to absorb information, reflect on your work, and, ultimately, learn more.
+
+## Feedback Yves
+Wenn du nichts neues gelernt hast, wäre die Frage, ob ihr nicht die Tasks anderst aufteilen hättet sollen, so dass du ebenfalls Berührungspunkte mit den DevOps Inhalten hast. Ihr könnt dies ja immer noch ändern.
