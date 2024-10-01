@@ -254,7 +254,7 @@ Below is the overview of the tasks each team member is currently working on.
 **Open Tasks:**
 
 - Complete the Continuous Deployment (CD) pipeline.
-- Develop a system to monitor key performance indicators with a logger (Key Performance Indicators).
+- Develop a system to monitor key performance indicators with a logger (KPI's).
 - Create a ticket system for Continuous Improvement initiatives.
 - Write the protocol.
 - Prepare the business report.
