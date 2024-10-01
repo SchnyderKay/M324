@@ -19,5 +19,3 @@ services:
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
-    volumes:
-      - ./drinks_db.sql:/docker-entrypoint-initdb.d/drinks_db.sql
