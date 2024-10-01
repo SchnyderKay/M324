@@ -37,8 +37,11 @@ public class DrinkDTO extends AbstractDTO {
     @Column(name = "str_instructions_de")
     private String strInstructionsDE;
 
-       @Column(name = "str_drink_thumb", nullable = false)
+    @Column(name = "str_drink_thumb", nullable = false)
     private String strDrinkThumb;
+
+    @Column(name = "str_glass", nullable = false)
+    private String strGlass;
 
     @Column(name = "str_ingredient1", nullable = false)
     private String strIngredient1;
@@ -135,6 +138,10 @@ public class DrinkDTO extends AbstractDTO {
 
     @Column(name = "str_image_attribution")
     private String strImageAttribution;
+
+    @Column(name = "str_creative_commons_confirmed", nullable = false)
+    private String strCreativeCommonsConfirmed;
+
 
 
     public DrinkDTO(String idDrink, String strDrink, String strTags,

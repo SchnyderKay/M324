@@ -1,6 +1,7 @@
 package com.example.demo.domain.drinks;
 
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.UUID;
 
 import com.example.demo.core.exception.DrinkAlreadyExistsException;
@@ -35,7 +36,7 @@ public class DrinkController {
             UUID uuid = UUID.fromString(id);
             Drink drink = drinkService.findById(uuid);
             return ResponseEntity.ok(drinkMapper.toDTO(drink));
-        } catch (DrinkNotFoundException e) {
+        } catch (DrinkNotFoundException | NoSuchElementException e) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
@@ -69,7 +70,7 @@ public class DrinkController {
         try {
             Drink drink = drinkService.updateById(id, drinkMapper.fromDTO(drinkDTO));
             return new ResponseEntity<>(drinkMapper.toDTO(drink), HttpStatus.OK);
-        } catch (DrinkNotFoundException e) {
+        } catch (DrinkNotFoundException | NoSuchElementException e) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
@@ -81,7 +82,7 @@ public class DrinkController {
         try {
             drinkService.deleteById(id);
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-        } catch (DrinkNotFoundException e) {
+        } catch (DrinkNotFoundException | NoSuchElementException e) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);

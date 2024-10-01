@@ -3,7 +3,14 @@ name: Docker Build and Test
 on:
   push:
     branches:
-      - '**'
+      - '**'    # Runs on all branches except those containing 'personal'
+    paths-ignore:
+      - '**personal**'  # Ignore branches containing 'personal'
+  pull_request:
+    branches:
+      - '**'    # Runs on pull requests targeting all branches except those containing 'personal'
+    paths-ignore:
+      - '**personal**'  # Ignore pull requests from branches containing 'personal'
 
 jobs:
   build-and-test:
@@ -16,7 +23,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '18'
-          distribution: 'adopt'
+          distribution: 'corretto'
 
       - name: Build with Gradle
         run: gradle build -x test
@@ -25,12 +32,18 @@ jobs:
       - name: Test with Gradle
         run: gradle test
         working-directory: ./DrinkDomain-main/backend/
-
+      
       - name: Upload test report
         uses: actions/upload-artifact@v3
         with:
           name: test-report
           path: ./DrinkDomain-main/backend/build/reports/tests/test/index.html
+
+  upload-build-docker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
 
       - name: Install Docker Compose
         run: |
