@@ -12,34 +12,40 @@ In a further step the user is able to select a cocktail and sending an e-mail wi
 
 Additionally, the user is able to ask for a random cocktail.
 
-## Rules
+## Branching
 
-**Branching Rules**
+In our project, we adopted a branching strategy that enables parallel development while ensuring the main branch remains stable and ready for deployment. 
 
-Never push directly to the main branch.
-Always create a new feature branch from the main and create a pull-request to the main branch. 
-The branch name starts with the ticket number-name and a short description of the task.
-Example: 1-documentation-add-definition
+### Rules
+Never push directly to the main branch. Always create a new feature branch from the main and create a pull-request to the main branch. The branch name starts with the ticket number-name and a short description of the task. Example: 1-documentation-add-definition
 
+To contribute your work, create a new branch according to the branch naming rules. This branch can be used as a topic or feature branch. To merge the branch, create a pull-request and ask for a code review. The branches are deleted after accepting the merge request. Additionally, for the optional learn journal, please create a personal branch, which will be merged at the end of the project.
 
-To contribute your work, create a new branch according to the branch naming rules. 
-This branch can be used as a topic or feature branch. 
-To merge the branch, create a pull-request and ask for a code review. 
-The branches are deleted after accepting the merge request.
-Additionally, for the optional learn journal, please create a personal branch, which will be merged at the end of the project.
+### Branching Flow:
+- **Main Branch**: Holds production-ready code.
+- **Develop Branch**: Used for integrating completed features before release.
+- **Feature Branches**: Created for new features or bug fixes, named after the ticket (e.g., 36-CI/CD-Theory), linked to backlog tasks.
+- **Personal Branches**: Each team member maintains a personal branch for their own notes or experiments, which isn't merged into the main codebase.
+- There is no **release branch** currently since the project isn’t releasing code yet.
 
-**Commit Rules**
+![Branching Strategy Diagram](../M324/Images/Ourworkflow.png)
+In this Image we show an example of how our Github Workflow & Commits are being pushed.
 
-There is no commit amount limit, but everyone should consider the readability of a branch.
-Every commit has a commit message with a short description about the changes in the commit. 
-Force-push is not allowed
+### Branching Rules:
+- No direct pushes to the main branch.
+- Feature branches must be created from the main branch, named after the ticket number and description (e.g., 1-documentation-add-definition).
+- Contributions must go through pull-requests, reviewed by at least one collaborator, with branches deleted after merging.
 
-**Merge Criteria**
+### Commit Rules:
+- No commit limit, but messages must be clear and concise.
+- No force-pushing allowed.
 
-All tests must pass before approving a pull-request.
-The pipeline must be successfully executed. 
-There are no debug logs allowed in a pull-request.
-Every pull-request must be reviewed and approved by at least one other collaborators.
+### Merge Criteria:
+- All tests must pass and pipelines must succeed.
+- No debug logs are permitted in pull-requests.
+- Each pull-request must be reviewed and approved before merging.
+
+This strategy accelerates development, ensures independent work without disrupting the main codebase, and maintains a stable main branch.
 
 **Meetings** 
 
