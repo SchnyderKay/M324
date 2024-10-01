@@ -57,7 +57,7 @@ public class DrinkControllerTest {
        mockMvc.perform(get("/drink/{id}", id))
                .andExpect(status().isOk())
                .andExpect(content().contentType(MediaType.APPLICATION_JSON))
-               .andExpect(jsonPath("$.id").value(id));
+               .andExpect(jsonPath("$.id").value(id.toString()));
 
        verify(drinkService, times(1)).findById(id);
        verify(drinkMapper, times(1)).toDTO(drink);
