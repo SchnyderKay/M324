@@ -233,7 +233,7 @@ He is currently focusing on updating the frontend and working specifically on th
 **Kay:**
 
 Kay is responsible for adjusting the Docker Compose configuration according to the feedback. 
-She also mentioned that if she completes his task early, he will assist Luca with his work.
+She also mentioned that if she completes her task early, she will assist Luca with her work.
 
 **Aryan:**
 
@@ -254,7 +254,7 @@ Below is the overview of the tasks each team member is currently working on.
 **Open Tasks:**
 
 - Complete the Continuous Deployment (CD) pipeline.
-- Develop a system to monitor key performance indicators with a logger (KPIs).
+- Develop a system to monitor key performance indicators with a logger (Key Performance Indicators).
 - Create a ticket system for Continuous Improvement initiatives.
 - Write the protocol.
 - Prepare the business report.
