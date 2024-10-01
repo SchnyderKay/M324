@@ -219,3 +219,67 @@ Kay was responsible for ensuring the database setup is included in the Dockerfil
 Completing the Pipeline: 
 Kay’s primary responsibility is finishing the CI pipeline setup, ensuring that all components (testing, building, deployment) are functioning correctly and efficiently.
 Application Version 2 (Optional): Kay and Jan may also begin work on a second version of the application, depending on the progress of the pipeline setup.
+
+### 24.09.2024
+
+During the meeting, we discussed the feedback received, which was very positive overall. 
+We were able to make improvements on a few specific points that had been highlighted like the docker file.
+
+**Jan:**
+
+Jan provided an update on his work regarding the frontend. 
+He is currently focusing on updating the frontend and working specifically on the dropdown implementation.
+
+**Kay:**
+
+Kay is responsible for adjusting the Docker Compose configuration according to the feedback. 
+She also mentioned that if she completes his task early, he will assist Luca with his work.
+
+**Aryan:**
+
+Aryan is focusing on expanding the branching strategy. 
+His goal is to improve the workflow by optimizing how branches are managed during development.
+
+**Luca:**
+
+Luca’s main task is to develop the Continuous Deployment (CD) pipeline. 
+
+In addition to the updates, a couple of questions were discussed. The first one was related to testing during the merge process, as there was some confusion about why testing is performed at this stage. The second point concerned the division and structure of the Docker environment, specifically how Docker is segmented.
+
+### 01.10.2024
+
+During the meeting, we created a list of open tasks and assigned responsibilities accordingly. 
+Below is the overview of the tasks each team member is currently working on.
+
+**Open Tasks:**
+
+- Complete the Continuous Deployment (CD) pipeline.
+- Develop a system to monitor key performance indicators with a logger (KPIs).
+- Create a ticket system for Continuous Improvement initiatives.
+- Write the protocol.
+- Prepare the business report.
+- 
+**Questions Discussed:**
+  
+Are the current KPIs acceptable (e.g., how many requests per minute, logger implementation)?
+Additional points raised by **Kay** about increasing the pipeline and deployment scope.
+Discussion about implementing a ticket system for handling customer tickets.
+
+**Aryan:**
+
+Aryan is working on expanding the branching strategy and setting up a logger system to monitor key metrics. 
+This is crucial for ensuring that we can track the system's performance effectively.
+
+**Jan:**
+
+Jan is tasked with fixing the frontend and writing the protocol. 
+However, during the discussion, it was decided that the previous frontend approach will be discarded due to a shift in the overall strategy.
+
+**Kay:**
+
+Kay is responsible for writing the business report and setting up the ticket system to handle customer issues. 
+Her focus is on ensuring that the ticketing process is streamlined for better customer support.
+
+**Luca:**
+
+Luca is developing the Continuous Deployment (CD) pipeline for AWS, utilizing micro cubes architecture to improve scalability and efficiency in deployments.
