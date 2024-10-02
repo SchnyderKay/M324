@@ -97,3 +97,18 @@ As a team, we were able to identify the strengths and weaknesses of our work and
 In the future, working together will be easier and the team seems to be looking forward to it, as the theory is no longer necessary and we can work together more as DevOps. 
 This will be a positive change for Aryan in particular. 
 
+# 24.09.2024
+
+**Teamwork**
+
+This week went way better for the process than last week. 
+Although we spontaneously canceled my task and are no longer expanding the frontend, I was able to make myself useful. 
+Together with kay, I was able to find a quick solution for the ticket system. Aryan can finally work on the code as well and is no longer only responsible for writing. 
+Communication with Luca is a bit bumpy and I/we don't know exactly whether he is making progress. 
+Nevertheless, the team as a whole is very positive and we are looking forward to the end of the project without any stress.
+
+**Improvement**
+
+We had fewer improvements than last week. 
+At the moment our priorities are on the open work
+
