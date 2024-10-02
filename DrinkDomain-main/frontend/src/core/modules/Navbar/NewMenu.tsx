@@ -52,6 +52,15 @@ const NewMenu: React.FC = () => {
                 <div className={styles.tab}>Add Bottle</div>
             </span>
             <span
+                className={`${styles.navItem} ${activeTab === 'support' ? styles.active : ''}`}
+                onClick={() => handleClick('support', "/support-ticket")}
+            >
+                <span className={styles.icon}>
+                    <i data-feather="bell"></i>
+                </span>
+                <div className={styles.tab}>Support</div>
+            </span>
+            <span
                 className={`${styles.navItem} ${activeTab === 'logout' ? styles.active : ''}`}
                 onClick={() => handleClick('logout', "/login")}
             >

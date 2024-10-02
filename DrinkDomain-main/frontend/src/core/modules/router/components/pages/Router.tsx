@@ -10,6 +10,7 @@ import BottleTable from "../../../../../domain/modules/bootle/components/pages/B
 import BottleDetailPage from "../../../../../domain/modules/bootle/components/pages/BottlePage/BottleDetailPage.tsx";
 import GuestBookEntryPage from '../../../../../domain/modules/guestbook/components/pages/GuestBookEntryPage.tsx';
 import GuestBook from '../../../../../domain/modules/guestbook/components/pages/GuestBook.tsx';
+import GitHubIssueForm from '../../../../../domain/modules/support/GitHubIssueForm.tsx';
 
 const Router = () => {
     return (
@@ -37,6 +38,8 @@ const Router = () => {
 
             <Route path={'/guestBook'} element={<GuestBook/>} />
             <Route path={'/guestBook/add'} element={<GuestBookEntryPage/>} />
+
+            <Route path={'/support-ticket'} element={<GitHubIssueForm/>} />
 
             <Route path='*' element={<div>Not Found</div>} />
         </Routes>
