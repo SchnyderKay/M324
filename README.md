@@ -122,6 +122,12 @@ The backend and the projects are built with Gradle on an Ubuntu base.
 Additionally, a Docker image is being created, which contains the DB and the backend.
 The image and the test report are saved as artifacts.
 
+## Ticket System
+The ticket system works so, that a User can create a ticket via the frontend.
+The ticket is created in the issues space of our project, which can then be moved to our Kanban board and assigned in a future Sprint.
+These tickets are created by a user called DrinkDomainSupport, and they can be categorized and assigned to our team members.
+After an estimate and a tag are determined, a description is added and is then ready to be worked on.
+
 ## Time
 
 Every collaborator must fill in his own time on the time sheet.
