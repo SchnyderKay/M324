@@ -289,3 +289,36 @@ Her focus is on ensuring that the ticketing process is streamlined for better cu
 **Luca:**
 
 Luca is developing the Continuous Deployment (CD) pipeline for AWS, utilizing micro cubes architecture to improve scalability and efficiency in deployments.
+
+#22.10.2024
+
+In the current meeting, we reviewed the status of the outstanding tasks and set priorities for the project. 
+The most urgent task is completing the CD pipeline to streamline the development process. 
+Another key focus is implementing a system to monitor key performance metrics, which will help track the project's progress. 
+Two important documents also remain to be written: the meeting protocol and the business report, the latter of which depends on the finalized metrics.
+
+Individual Tasks:
+
+**Jan:**
+
+Jan is responsible for writing the meeting protocol to document the progress of the project. 
+In addition, he will set up Aryan's project to help him get started. 
+He is also tasked with investigating various options for the CD pipeline to determine the best solution for the team. 
+Lastly, Jan will compare the estimated time against the actual time taken for tasks, which will help improve time management moving forward.
+
+**Kay:** 
+
+Kay will assist Jan in exploring options for the CD pipeline, contributing to the analysis and decision-making process. 
+She is also responsible for documenting the ticketing system, which is essential for collecting 
+the necessary key performance metrics. Additionally, Kay will compare the estimated times with the real times to assess and improve the team's efficiency.
+
+**Aryan:**
+
+Aryan's main focus is completing the logger for tracking key performance metrics, which is crucial for monitoring and analyzing project data. 
+If the logger isn't finished on time, Aryan will continue working on it until it's fully implemented. 
+This task is vital for enabling accurate control of project metrics.
+
+**Luca:**
+
+Luca will continue working on expanding the CD pipeline, with support from Mr. Nussle. 
+He will focus on developing and adjusting the pipeline to ensure it meets the project's requirements and runs smoothly.
