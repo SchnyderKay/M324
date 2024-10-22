@@ -97,7 +97,7 @@ As a team, we were able to identify the strengths and weaknesses of our work and
 In the future, working together will be easier and the team seems to be looking forward to it, as the theory is no longer necessary and we can work together more as DevOps. 
 This will be a positive change for Aryan in particular. 
 
-# 24.09.2024
+# 01.10.2024
 
 **Teamwork**
 
@@ -111,4 +111,15 @@ Nevertheless, the team as a whole is very positive and we are looking forward to
 
 We had fewer improvements than last week. 
 At the moment our priorities are on the open work
+
+# 22.10.2024
+
+**Teamwork**
+
+I was glad that we all lost track of things as a team and had to find our feet again first. 
+After that, the tasks were quickly clear to everyone again and everyone knew what to do. 
+I was able to quickly and efficiently fill out the Excel sheet with kay and bring all the issue data into a clear view. 
+I was also able to help Aryan set up the project. 
+The communication from before the holidays was quickly resumed and we are making good progress 
+
 
