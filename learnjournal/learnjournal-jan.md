@@ -122,4 +122,14 @@ I was able to quickly and efficiently fill out the Excel sheet with kay and brin
 I was also able to help Aryan set up the project. 
 The communication from before the holidays was quickly resumed and we are making good progress 
 
+# 29.10.2024
+
+**Teamwork**
+
+We didn't have much to discuss today.
+Everyone knew exactly what to do. 
+Aryan and Luca were able to carry on independently and didn't need my help. 
+Together with Kay, I decided to revise the documentation. 
+Kay had the file open and together we decided on the wording and semantics of the sections. We also reworked the entire layout to improve readability.
+
 
