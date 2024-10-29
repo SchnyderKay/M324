@@ -51,7 +51,7 @@ const Wrapper = styled('div')(() => ({
     overflow: 'hidden',
 }));
 
-const FallingNames = ({children, childrenInBack} : FallingNamesProps) => {
+const FallingNames = ({children} : FallingNamesProps) => {
     return (
         <Wrapper>
             {
