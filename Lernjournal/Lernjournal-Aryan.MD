@@ -178,3 +178,77 @@ Overall, the week has gone really well. It's been more relaxing, which makes the
 
 ## Feedback Yves
 Wenn du nichts neues gelernt hast, wäre die Frage, ob ihr nicht die Tasks anderst aufteilen hättet sollen, so dass du ebenfalls Berührungspunkte mit den DevOps Inhalten hast. Ihr könnt dies ja immer noch ändern.
+
+
+## Antwort auf Feedback
+
+Vielen Dank für das Feedback, Yves.
+
+Wir haben die Aufgabenverteilung bereits angepasst, sodass ich nun ebenfalls mehr Einblicke in die DevOps-Inhalte erhalte. Die Änderungen in der Aufgabenstruktur erleichtern mir jetzt den Zugang zu verschiedenen Themenbereichen, was sehr hilfreich ist.
+
+Dank der aufgehobenen Deadlines konnten wir die Aufgaben besser verteilen, sodass ich nun stärker in die DevOps-Prozesse eingebunden bin und mein Wissen erweitern kann. Diese Flexibilität ermöglicht es uns, die Themen in einem breiteren Kontext zu bearbeiten und die Zusammenarbeit zu verbessern.
+
+
+# Learning Journal Entry - 1 October 2024
+
+## Tickets Worked On:
+- Repository Clean-Up
+- Personalizing the Repository
+- Implementing Logger
+
+## Theory of the Day: Repository Management and Logging
+
+### Why is Repository Clean-Up Important?
+Repository clean-up is a critical part of maintaining an organized and efficient codebase. Over time, repositories can accumulate unnecessary files, outdated branches, and unused resources, which can make it harder to navigate and work efficiently within the project. Cleaning up the repository helps improve readability and structure, allowing team members to access relevant files more quickly. Additionally, a well-maintained repository reduces storage costs and makes it easier for new team members to onboard.
+
+During this clean-up, I ensured that redundant files were removed and the repository was structured according to best practices, making it accessible and streamlined for ongoing work.
+
+### Customizing the Repository for Personal Workflow
+Customizing the repository to align with personal workflow preferences allows for a more efficient coding experience. For this, I adjusted configurations and set up personal folders or paths, which enhances productivity and organization. This customization also included adjusting Git settings and defining personal preferences for working with the codebase in a way that fits my style, making day-to-day tasks smoother.
+
+### Implementing a Logger for Better Debugging
+Logging is an essential aspect of monitoring and debugging in software development. A logger provides visibility into the flow of application execution, which can be vital for identifying issues in production or in testing environments. 
+
+In this project, I implemented a logger that tracks API requests and responses, making it easier to debug and review activity logs. This implementation included specifying log levels, like info, warning, and error, which allows for clear categorization of messages and a better understanding of application behavior. A well-implemented logging system enables quick responses to issues, minimizes downtime, and supports thorough monitoring of the application.
+
+### Key Benefits of Logging:
+- **Traceability:** Logs create a history of what actions were taken, which can help trace the sequence of events leading up to an error.
+- **Enhanced Debugging:** With log levels, developers can filter out unnecessary information and focus on the most critical events.
+- **Improved Communication:** Logs serve as a record of application behavior, making it easier for team members to collaborate on troubleshooting and resolving issues.
+
+## Reflection:
+Completing these tasks gave me a sense of accomplishment, as repository clean-up and logging are both necessary for long-term project health. I’m also more comfortable with my personal workspace, which helps me stay productive. Working on the logger, in particular, provided valuable experience in improving application traceability and monitoring, which I know will benefit the team and future work.
+
+Overall, while these tasks were not as code-intensive, they felt foundational and rewarding because of their importance to project maintenance and debugging.
+
+# Learning Journal Entry - 22 October 2024
+
+## Tickets Worked On:
+- Re-working Documentation
+- Writing and Refining Logger
+- Fixing Container
+
+## Theory of the Day: Importance of Documentation and Logging
+
+### Why is Documentation Essential in Development?
+Effective documentation is key to a well-functioning project, serving as a resource for current team members and a guide for future ones. Clear and concise documentation helps team members understand the purpose, architecture, and usage of various components within the codebase. During this re-work, I aimed to clarify the documentation for easier understanding, including updated explanations on workflows, component interactions, and code usage.
+
+This effort included adding more examples and making sure the documentation aligned with recent code updates. A well-maintained document reduces onboarding time, helps prevent errors, and provides continuity even as team members change.
+
+### Enhancing the Logger for Better Monitoring
+A reliable logging system helps maintain transparency within an application’s processes. I continued work on the logger, refining how it captures and categorizes events, particularly for tracking errors and system behavior across components. This iteration allowed me to improve both the readability and utility of the logs by implementing clear formats and adding context to API-related entries.
+
+The revised logger now includes better-defined log levels and can provide immediate insights into application issues, which will enhance the debugging process. Additionally, the structured log format improves tracking for future audits or troubleshooting.
+
+### Container Fixes for Improved Stability
+Containers are essential for ensuring consistent environments across development and production. The “fixing container” task involved resolving dependency issues and adjusting configurations to stabilize the container environment. This process allowed me to ensure compatibility across different systems, reduce environment-related bugs, and create a more resilient container setup.
+
+### Key Benefits of Using Containers:
+- **Consistency Across Environments:** Containers ensure that applications run the same way in development and production.
+- **Simplified Deployment:** By packaging dependencies, containers streamline the deployment process, reducing the chance of issues due to differing setups.
+- **Resource Efficiency:** Containers use system resources effectively, which helps manage costs and increases performance.
+
+## Reflection:
+This round of tasks felt very productive, particularly as I could see the impact of each one directly on the project's usability and stability. Improving documentation was a rewarding challenge, as it meant not only documenting but thinking critically about how to make things more intuitive. The logger refinements also provided an opportunity to improve our debugging process, which I know will save time in the long run.
+
+Fixing the container added some technical depth to the day and was satisfying to complete, especially knowing that it will reduce errors and enhance consistency. This work emphasized the importance of foundational elements in creating a smooth, scalable project experience.
