@@ -111,16 +111,31 @@ In the terminal, navigate to the backend using ‘cd’ and execute the followin
 
 ## CI Pipeline
 
-Our CI Pipeline is there to check, that the project is built and that the tests do not have any errors.
-The backend and the projects are built with Gradle on an Ubuntu base.
-Additionally, a Docker image is being created, which contains the DB and the backend.
-The image and the test report are saved as artifacts.
+The Docker Build and Test CI Pipeline is set up to ensure the project builds successfully and passes all tests before deployment. It runs automatically on any branch push or pull request, except branches tagged with "personal."
+
+### Pipeline Workflow
+
+1. **Build and Test**:
+   - Runs on an Ubuntu environment with JDK 18 set up (Corretto distribution).
+   - Uses Gradle to build the project (skipping tests initially) and then runs tests to validate code functionality.
+   - A test report is generated and uploaded as an artifact for easy review.
+
+2. **Docker Image Creation**:
+   - Pulls the necessary PostgreSQL image to include the database in the Docker environment.
+   - Builds the Docker image using docker-compose, creating an environment that includes both the backend and the database.
+   - Saves the completed Docker image as an artifact (`image.tar`) for potential deployment or further testing.
+
+By the end of the pipeline, both the test report and Docker image are preserved as artifacts, providing a clear snapshot of the build and test state for each commit or pull request. This ensures a consistent, tested environment ready for the next deployment stage.
 
 ## Ticket System
-The ticket system works so, that a User can create a ticket via the frontend.
-The ticket is created in the issues space of our project, which can then be moved to our Kanban board and assigned in a future Sprint.
-These tickets are created by a user called DrinkDomainSupport, and they can be categorized and assigned to our team members.
-After an estimate and a tag are determined, a description is added and is then ready to be worked on.
+Our ticketing system lets users create tickets directly through the frontend when they need help or have a request.
+Each ticket, created under the DrinkDomainSupport account, appears in our Issues section and can be tagged as documentation, bug, or enhancement. 
+
+Once a ticket is created, it’s reviewed and moved to the Kanban board for prioritization.
+During Sprint planning, the team decides if it should go into the upcoming Sprint based on priority and resources.
+Each ticket also receives an estimate for effort and a detailed description to ensure the assigned team member has all necessary context to start work smoothly.
+
+This process keeps our workflow organized and efficient, making sure all tickets are ready to go with clear information and assigned priority before work begins.
 
 ## Time
 
