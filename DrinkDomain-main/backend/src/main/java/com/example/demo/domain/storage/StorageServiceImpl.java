@@ -101,7 +101,7 @@ public class StorageServiceImpl extends AbstractServiceImpl<Storage> implements 
     @Override
     public ByteArrayResource getFileAsResource(UUID storageId) {
         // Get Storage Object
-        Storage storage = findById(storageId.toString());
+        Storage storage = findById(storageId);
 
         // Check if checksum exists
         if (storage.getEncryptedFileChecksum() == null) {
@@ -138,7 +138,7 @@ public class StorageServiceImpl extends AbstractServiceImpl<Storage> implements 
 
     @Override
     public void deleteFile(UUID fileId) {
-        Storage storage = findById(fileId.toString());
+        Storage storage = findById(fileId);
 
         // Get location of File Storage
         Path location = Path.of(this.properties.getLocation()).toAbsolutePath();

@@ -58,7 +58,7 @@ const FallingNames = ({children} : FallingNamesProps) => {
                 names.map((ele) => 
                     <FallingName
                         entry={ele}
-                        properties={{animationDelay: Math.random() * 4}}
+                        properties={{animationDelay: Math.random() * 5}}
                     />
                 )
             }

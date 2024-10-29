@@ -12,34 +12,40 @@ In a further step the user is able to select a cocktail and sending an e-mail wi
 
 Additionally, the user is able to ask for a random cocktail.
 
-## Rules
+## Branching
 
-**Branching Rules**
+In our project, we adopted a branching strategy that enables parallel development while ensuring the main branch remains stable and ready for deployment. 
 
-Never push directly to the main branch.
-Always create a new feature branch from the main and create a pull-request to the main branch. 
-The branch name starts with the ticket number-name and a short description of the task.
-Example: 1-documentation-add-definition
+### Rules
+Never push directly to the main branch. Always create a new feature branch from the main and create a pull-request to the main branch. The branch name starts with the ticket number-name and a short description of the task. Example: 1-documentation-add-definition
 
+To contribute your work, create a new branch according to the branch naming rules. This branch can be used as a topic or feature branch. To merge the branch, create a pull-request and ask for a code review. The branches are deleted after accepting the merge request. Additionally, for the optional learn journal, please create a personal branch, which will be merged at the end of the project.
 
-To contribute your work, create a new branch according to the branch naming rules. 
-This branch can be used as a topic or feature branch. 
-To merge the branch, create a pull-request and ask for a code review. 
-The branches are deleted after accepting the merge request.
-Additionally, for the optional learn journal, please create a personal branch, which will be merged at the end of the project.
+### Branching Flow:
+- **Main Branch**: Holds production-ready code.
+- **Develop Branch**: Used for integrating completed features before release.
+- **Feature Branches**: Created for new features or bug fixes, named after the ticket (e.g., 36-CI/CD-Theory), linked to backlog tasks.
+- **Personal Branches**: Each team member maintains a personal branch for their own notes or experiments, which isn't merged into the main codebase.
+- There is no **release branch** currently since the project isn’t releasing code yet.
 
-**Commit Rules**
+![Branching Strategy Diagram](../M324/Images/Ourworkflow.png)
+In this Image we show an example of how our Github Workflow & Commits are being pushed.
 
-There is no commit amount limit, but everyone should consider the readability of a branch.
-Every commit has a commit message with a short description about the changes in the commit. 
-Force-push is not allowed
+### Branching Rules:
+- No direct pushes to the main branch.
+- Feature branches must be created from the main branch, named after the ticket number and description (e.g., 1-documentation-add-definition).
+- Contributions must go through pull-requests, reviewed by at least one collaborator, with branches deleted after merging.
 
-**Merge Criteria**
+### Commit Rules:
+- No commit limit, but messages must be clear and concise.
+- No force-pushing allowed.
 
-All tests must pass before approving a pull-request.
-The pipeline must be successfully executed. 
-There are no debug logs allowed in a pull-request.
-Every pull-request must be reviewed and approved by at least one other collaborators.
+### Merge Criteria:
+- All tests must pass and pipelines must succeed.
+- No debug logs are permitted in pull-requests.
+- Each pull-request must be reviewed and approved before merging.
+
+This strategy accelerates development, ensures independent work without disrupting the main codebase, and maintains a stable main branch.
 
 **Meetings** 
 
@@ -64,7 +70,7 @@ Every collaborator can use the IDE they prefer.
 
 ## Database
 
-**Setup**
+### Manuel Setup
 
 To setup the Docker container use the command given below
 ```
@@ -96,17 +102,31 @@ When the container is running you can start DBeaver and follow the instructions:
 
 Insert the SQL statement given 
 
-[SQL file](./drinks_db.sql) 
+[SQL file](DrinkDomain-main/backend/drinks_db.sql) 
 
 🔴 Afterwards click the run script to create a table with data.
 
 ![step 4](./Images/4.png)
 
-**Start the backend**
+### Start Backend and DB
+
 To start the backend, a terminal must be started in the IDE. 
 In the terminal, navigate to the backend using ‘cd’ and execute the following command:
 
 ``` docker-compose up -d ```
+
+## CI Pipeline
+
+Our CI Pipeline is there to check, that the project is built and that the tests do not have any errors.
+The backend and the projects are built with Gradle on an Ubuntu base.
+Additionally, a Docker image is being created, which contains the DB and the backend.
+The image and the test report are saved as artifacts.
+
+## Ticket System
+The ticket system works so, that a User can create a ticket via the frontend.
+The ticket is created in the issues space of our project, which can then be moved to our Kanban board and assigned in a future Sprint.
+These tickets are created by a user called DrinkDomainSupport, and they can be categorized and assigned to our team members.
+After an estimate and a tag are determined, a description is added and is then ready to be worked on.
 
 ## Time
 
@@ -169,3 +189,142 @@ In todays meeting we discussed that we should start writing tickets regarding th
 **Kay** and **Jan** will take a look at the user stories **Aryan** wrote last week and will also work on the backend so everything that is due today is done.
 
 The theory part on continues integration will be done by **Aryan**.
+
+### 17.09.2024
+
+**Next Task**
+
+Feedback:
+
+The overall feedback was positive.
+We will work on improving the infomations and tips given in the feedback.
+
+**Jan:**
+
+DB in Dockerfile: 
+Jan is working alongside Jan to complete the database setup in the Dockerfile.
+Integration Tests: 
+Jan is also working on implementing integration tests. These tests should be executed to validate the interactions between different components of the system.
+Integration Tests in Pipeline: He will integrate the automated execution of the tests within the CI pipeline, ensuring that they are run during each build to catch issues early.
+Application Version 2 (Optional): Kay and Jan may also begin work on a second version of the application, depending on the progress of the pipeline setup.
+
+**Aryan:**
+
+Branching Strategy: 
+Aryan is responsible for setting up and documenting the branching strategy. 
+This includes defining how features, bug fixes, and releases will be managed within version control to maintain a clean and organized codebase.
+CD Theory: 
+Aryan also provided an overview of Continuous Deployment (CD) principles, highlighting the theoretical concepts that the team should follow in practice.
+
+**Luca:**
+
+Setting up CD: 
+Luca is tasked with researching and setting up the Continuous Deployment process. 
+He will focus on automating deployments and ensure that updates can be reliably and quickly delivered to the production environment.
+Researching Information: 
+Luca will also gather relevant information and resources to help or even start implement the CD process effectively.
+
+**Kay:**
+
+DB in Dockerfile: 
+Kay was responsible for ensuring the database setup is included in the Dockerfile. The task involved setting up the database so that it is consistently available within the Docker environment.
+Completing the Pipeline: 
+Kay’s primary responsibility is finishing the CI pipeline setup, ensuring that all components (testing, building, deployment) are functioning correctly and efficiently.
+Application Version 2 (Optional): Kay and Jan may also begin work on a second version of the application, depending on the progress of the pipeline setup.
+
+### 24.09.2024
+
+During the meeting, we discussed the feedback received, which was very positive overall. 
+We were able to make improvements on a few specific points that had been highlighted like the docker file.
+
+**Jan:**
+
+Jan provided an update on his work regarding the frontend. 
+He is currently focusing on updating the frontend and working specifically on the dropdown implementation.
+
+**Kay:**
+
+Kay is responsible for adjusting the Docker Compose configuration according to the feedback. 
+She also mentioned that if she completes her task early, she will assist Luca with her work.
+
+**Aryan:**
+
+Aryan is focusing on expanding the branching strategy. 
+His goal is to improve the workflow by optimizing how branches are managed during development.
+
+**Luca:**
+
+Luca’s main task is to develop the Continuous Deployment (CD) pipeline. 
+
+In addition to the updates, a couple of questions were discussed. The first one was related to testing during the merge process, as there was some confusion about why testing is performed at this stage. The second point concerned the division and structure of the Docker environment, specifically how Docker is segmented.
+
+### 01.10.2024
+
+During the meeting, we created a list of open tasks and assigned responsibilities accordingly. 
+Below is the overview of the tasks each team member is currently working on.
+
+**Open Tasks:**
+
+- Complete the Continuous Deployment (CD) pipeline.
+- Develop a system to monitor key performance indicators with a logger (KPI's).
+- Create a ticket system for Continuous Improvement initiatives.
+- Write the protocol.
+- Prepare the business report.
+- 
+**Questions Discussed:**
+  
+Are the current KPIs acceptable (e.g., how many requests per minute, logger implementation)?
+Additional points raised by **Kay** about increasing the pipeline and deployment scope.
+Discussion about implementing a ticket system for handling customer tickets.
+
+**Aryan:**
+
+Aryan is working on expanding the branching strategy and setting up a logger system to monitor key metrics. 
+This is crucial for ensuring that we can track the system's performance effectively.
+
+**Jan:**
+
+Jan is tasked with fixing the frontend and writing the protocol. 
+However, during the discussion, it was decided that the previous frontend approach will be discarded due to a shift in the overall strategy.
+
+**Kay:**
+
+Kay is responsible for writing the business report and setting up the ticket system to handle customer issues. 
+Her focus is on ensuring that the ticketing process is streamlined for better customer support.
+
+**Luca:**
+
+Luca is developing the Continuous Deployment (CD) pipeline for AWS, utilizing micro cubes architecture to improve scalability and efficiency in deployments.
+
+#22.10.2024
+
+In the current meeting, we reviewed the status of the outstanding tasks and set priorities for the project. 
+The most urgent task is completing the CD pipeline to streamline the development process. 
+Another key focus is implementing a system to monitor key performance metrics, which will help track the project's progress. 
+Two important documents also remain to be written: the meeting protocol and the business report, the latter of which depends on the finalized metrics.
+
+Individual Tasks:
+
+**Jan:**
+
+Jan is responsible for writing the meeting protocol to document the progress of the project. 
+In addition, he will set up Aryan's project to help him get started. 
+He is also tasked with investigating various options for the CD pipeline to determine the best solution for the team. 
+Lastly, Jan will compare the estimated time against the actual time taken for tasks, which will help improve time management moving forward.
+
+**Kay:** 
+
+Kay will assist Jan in exploring options for the CD pipeline, contributing to the analysis and decision-making process. 
+She is also responsible for documenting the ticketing system, which is essential for collecting 
+the necessary key performance metrics. Additionally, Kay will compare the estimated times with the real times to assess and improve the team's efficiency.
+
+**Aryan:**
+
+Aryan's main focus is completing the logger for tracking key performance metrics, which is crucial for monitoring and analyzing project data. 
+If the logger isn't finished on time, Aryan will continue working on it until it's fully implemented. 
+This task is vital for enabling accurate control of project metrics.
+
+**Luca:**
+
+Luca will continue working on expanding the CD pipeline, with support from Mr. Nussle. 
+He will focus on developing and adjusting the pipeline to ensure it meets the project's requirements and runs smoothly.
