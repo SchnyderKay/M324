@@ -1,25 +1,28 @@
 version: '2.7'
- 
+
 services:
   frontend:
     build: ./frontend
+    image: drinkdomainsupporter/frontend
     container_name: frontend
     ports:
       - 8084:80
     depends_on:
       - backend
- 
+
   backend:
     build: ./backend
+    image: drinkdomainsupporter/backend
     container_name: backend
     ports:
       - 8085:8081
     depends_on:
       - postgres
     environment:
-      - POSTGRES_URL=postgres
-      - POSTGRES_PORT=5432
- 
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/mydatabase
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=postgres
+
   postgres:
     image: postgres:15
     container_name: postgres
@@ -28,3 +31,10 @@ services:
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=mydatabase
+    volumes:
+      - db_data:/var/lib/postgresql/data
+      - ./database.sql:/docker-entrypoint-initdb.d/database.sql  # Mount SQL file for initialization
+
+volumes:
+  db_data:

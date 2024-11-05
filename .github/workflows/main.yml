@@ -50,23 +50,50 @@ jobs:
           sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
           sudo chmod +x /usr/local/bin/docker-compose
 
+      # Pull necessary images before starting Docker Compose
       - name: Pull PostgreSQL image
         run: docker pull postgres
 
-      - name: Build Docker image
+      # Build images for all services defined in docker-compose.yaml
+      - name: Build Docker images
         run: docker-compose -f ./DrinkDomain-main/docker-compose.yaml build
 
-      - name: Get image name
-        id: get_image_name
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: drinkdomainsupporter
+          password: TheDrinkDomainIsReallyCool&Functional
+
+      # Tag each image for Docker Hub and push
+      - name: Tag and push Docker images
         run: |
-          IMAGE_NAME=$(docker-compose -f ./DrinkDomain-main/docker-compose.yaml config --services | head -n 1)
-          echo "IMAGE_NAME=$IMAGE_NAME" >> $GITHUB_ENV
+          # Define an array of images to tag and push
+          IMAGES=("drinkdomainsupporter/frontend" "drinkdomainsupporter/backend")
+          
+          for IMAGE in "${IMAGES[@]}"; do
+            IMAGE_ID=$(docker images -q "${IMAGE}")  # Get image ID by image name
+            if [ -n "$IMAGE_ID" ]; then
+              # Tag and push to Docker Hub with latest and commit SHA
+              docker tag "$IMAGE_ID" "$IMAGE:latest"
+              docker tag "$IMAGE_ID" "$IMAGE:${{ github.sha }}"
+              docker push "$IMAGE:latest"
+              docker push "$IMAGE:${{ github.sha }}"
+            else
+              echo "Image $IMAGE not found, skipping tagging and push."
+            fi
+          done
 
-      - name: Save Docker image as artifact
-        run: docker save $IMAGE_NAME > image.tar
 
-      - name: Upload Docker image as artifact
+      # Save images as tar files for artifacts
+      - name: Save Docker images as artifacts
+        run: |
+          for SERVICE in "${SERVICES[@]}"; do
+            docker save "drinkdomainsupporter/$SERVICE:latest" -o "${SERVICE}_latest.tar"
+          done
+
+      - name: Upload Docker images as artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: docker-image
-          path: image.tar
+          name: docker-images
+          path: |
+            *.tar
