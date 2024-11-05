@@ -132,4 +132,19 @@ Aryan and Luca were able to carry on independently and didn't need my help.
 Together with Kay, I decided to revise the documentation. 
 Kay had the file open and together we decided on the wording and semantics of the sections. We also reworked the entire layout to improve readability.
 
+# 05.11.2024
+
+**Teamwork and Communication**
+
+Today was the last day of the module. 
+I was a bit surprised that not everything was as ready as we had previously discussed. 
+Unfortunately, it wasn't communicated transparently that there were problems and that it wasn't finished yet. 
+It was specifically annoying because my work was dependent on the results of others. 
+In the end, we decided as a team to use the other data that uch and kay had collected and to document the rest, as otherwise we would have to wait too long for the results. 
+
+Others in the team contacted me in the week leading up to today outside of the TBZ and we were able to fix problems so that the schedule for today could be adhered to. 
+
+Apart from these minor inconsistencies in communication, I am satisfied with the team. everyone had the confidence to say something or get in touch. no-one got lost or had to keep problems to themselves.
+
+
 
