@@ -56,6 +56,10 @@ jobs:
 
       # Build images for all services defined in docker-compose.yaml
       - name: Build Docker images
+        env:
+            SPRING_DATASOURCE_URL: jdbc:postgresql://database2.cwdej8d3q2me.us-east-1.rds.amazonaws.com:5432/postgres
+            SPRING_DATASOURCE_USERNAME: postgres
+            SPRING_DATASOURCE_PASSWORD: 75j3lL2UrN1lQZxzrlMp
         run: docker-compose -f ./DrinkDomain-main/docker-compose.yaml build
 
       - name: Log in to Docker Hub
