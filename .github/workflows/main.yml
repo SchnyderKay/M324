@@ -59,7 +59,7 @@ jobs:
       - name: Get image name
         id: get_image_name
         run: |
-          IMAGE_NAME=$(docker-compose -f ./DrinkDomain-main/backend/docker-compose.yml config --services | head -n 1)
+          IMAGE_NAME=$(docker-compose -f ./DrinkDomain-main/backend/docker-compose.yaml config --services | head -n 1)
           echo "IMAGE_NAME=$IMAGE_NAME" >> $GITHUB_ENV
 
       - name: Save Docker image as artifact
