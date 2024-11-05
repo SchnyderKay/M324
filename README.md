@@ -68,7 +68,7 @@ Every collaborator can use the IDE they prefer.
 
 To setup the Docker container use the command given below
 ```
-docker run --name local-postgres -e POSTGRES_PASSWORD=drinks -p 5432:5432 -d postgres
+docker-compose -f ./DrinkDomain-main/docker-compose.yaml build
 ```
 
 When the container is running you can start DBeaver and follow the instructions:
@@ -81,7 +81,7 @@ When the container is running you can start DBeaver and follow the instructions:
 
 **Step 2**
 
-🔴 Insert "drinks" in the password area.
+🔴 Insert "prostgres" in the password area.
 🟢 coninue by clicking finish.
 
 ![step 2](./Images/2.png)
