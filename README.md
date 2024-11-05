@@ -6,12 +6,6 @@ Our application gives the user the opportunity to use a dropdown menu and choose
 Based on the decision the application checks a database filled with cocktails and provides the user with all the possible cocktails with the chosen ingredient (ex. Gin Tonic, Vodka sour, Cuba Libre).
 The Cocktails will be editable via CRUD (Create, Read, Update, Delete) endpoints.
 
-**Extra**
-
-In a further step the user is able to select a cocktail and sending an e-mail with all the necessary ingredients to their personal mailbox.
-
-Additionally, the user is able to ask for a random cocktail.
-
 ## Branching
 
 In our project, we adopted a branching strategy that enables parallel development while ensuring the main branch remains stable and ready for deployment. 
@@ -28,45 +22,45 @@ To contribute your work, create a new branch according to the branch naming rule
 - **Personal Branches**: Each team member maintains a personal branch for their own notes or experiments, which isn't merged into the main codebase.
 - There is no **release branch** currently since the project isn’t releasing code yet.
 
-![Branching Strategy Diagram](../M324/Images/Ourworkflow.png)
+![Branching Strategy Diagram](./Images/Ourworkflow.png)
 In this Image we show an example of how our Github Workflow & Commits are being pushed.
-
-### Branching Rules:
-- No direct pushes to the main branch.
-- Feature branches must be created from the main branch, named after the ticket number and description (e.g., 1-documentation-add-definition).
-- Contributions must go through pull-requests, reviewed by at least one collaborator, with branches deleted after merging.
 
 ### Commit Rules:
 - No commit limit, but messages must be clear and concise.
-- No force-pushing allowed.
+- Force-pushing allowed.
+- Only commit on your own branches.
 
 ### Merge Criteria:
 - All tests must pass and pipelines must succeed.
 - No debug logs are permitted in pull-requests.
-- Each pull-request must be reviewed and approved before merging.
+- Each pull-request must be reviewed and approved by at least one other coworker before merging.
+- Delete branch after merging.
 
 This strategy accelerates development, ensures independent work without disrupting the main codebase, and maintains a stable main branch.
 
-**Meetings** 
+## Meetings
 
-The weekly will be every Tuesday at 8:30.
+The weekly will be every Tuesday at 8:30 o'clock.
 At the meeting the team checks and updates the Kanban board and discusses the tasks in progress.
 During the meeting, problems are discussed and open tasks are assigned to the members. 
-The aim of the meeting is for everyone to know what they need to work on afterwards without having to request further feedback from anyone.
+The aim of the meeting is for everyone to know what they need to work on afterwards without having to request further feedback from anyone. 
 
-**Enviroment**
+Additionally a protocoll is written to ensure, that everyone on the team can look up their tasks and open discussion points.
+
+## Enviroment
 
 We will write our Frontend in Typescript React and our Backend in Java.
 Every collaborator can use the IDE they prefer.
 
-**Coding Rules**
+## Coding Rules
 
 - Names of classes should be in camel case. 
 - Names of variables and functions should be in lower camel case. 
 - Names should be chosen with purpose behind them. 
 - Code should be written with readability in mind. Readable code should be understood without having to ask somebody else for an explanation to achieve this the code has to be documented and the functions shouldn't have repeated code and should be kept as small as possible. 
 - Logic and endpoints should be unit tested. 
-- The application should be built on the REST principals
+- The application should be built on the REST principals.
+- Have the SOLID priciples in your mind while coding.
 
 ## Database
 
@@ -117,16 +111,31 @@ In the terminal, navigate to the backend using ‘cd’ and execute the followin
 
 ## CI Pipeline
 
-Our CI Pipeline is there to check, that the project is built and that the tests do not have any errors.
-The backend and the projects are built with Gradle on an Ubuntu base.
-Additionally, a Docker image is being created, which contains the DB and the backend.
-The image and the test report are saved as artifacts.
+The Docker Build and Test CI Pipeline is set up to ensure the project builds successfully and passes all tests before deployment. It runs automatically on any branch push or pull request, except branches tagged with "personal."
+
+### Pipeline Workflow
+
+1. **Build and Test**:
+   - Runs on an Ubuntu environment with JDK 18 set up (Corretto distribution).
+   - Uses Gradle to build the project (skipping tests initially) and then runs tests to validate code functionality.
+   - A test report is generated and uploaded as an artifact for easy review.
+
+2. **Docker Image Creation**:
+   - Pulls the necessary PostgreSQL image to include the database in the Docker environment.
+   - Builds the Docker image using docker-compose, creating an environment that includes both the backend and the database.
+   - Saves the completed Docker image as an artifact (`image.tar`) for potential deployment or further testing.
+
+By the end of the pipeline, both the test report and Docker image are preserved as artifacts, providing a clear snapshot of the build and test state for each commit or pull request. This ensures a consistent, tested environment ready for the next deployment stage.
 
 ## Ticket System
-The ticket system works so, that a User can create a ticket via the frontend.
-The ticket is created in the issues space of our project, which can then be moved to our Kanban board and assigned in a future Sprint.
-These tickets are created by a user called DrinkDomainSupport, and they can be categorized and assigned to our team members.
-After an estimate and a tag are determined, a description is added and is then ready to be worked on.
+Our ticketing system lets users create tickets directly through the frontend when they need help or have a request.
+Each ticket, created under the DrinkDomainSupport account, appears in our Issues section and can be tagged as documentation, bug, or enhancement. 
+
+Once a ticket is created, it’s reviewed and moved to the Kanban board for prioritization.
+During Sprint planning, the team decides if it should go into the upcoming Sprint based on priority and resources.
+Each ticket also receives an estimate for effort and a detailed description to ensure the assigned team member has all necessary context to start work smoothly.
+
+This process keeps our workflow organized and efficient, making sure all tickets are ready to go with clear information and assigned priority before work begins.
 
 ## Time
 
@@ -140,9 +149,13 @@ The time must be entered to the nearest 15 minutes.
 ## User Stories
 The user stories are used to imitate the behavior of a user. 
 We can use these stories to build tests and logic into our application.
-This simplifies the planning and creation of tickets
+This simplifies the planning and creation of tickets.
 
 ![user stories](./Images/userStories.png)
+
+## Classification figures
+
+We use two different kinds of classification figures, which are used in the business report. For the first we used all metrics from our tickets, which gives us different information about our work process. All the information about the tickets can be found [here](https://tbzedu-my.sharepoint.com/:x:/g/personal/kay_schnyder_edu_tbz_ch/ETEOqXSWJ_NElX9zm-97S48BYXe6KywImw80YmzvvCs97Q?e=njes6M).
 
 ## Protocol
 
@@ -296,7 +309,7 @@ Her focus is on ensuring that the ticketing process is streamlined for better cu
 
 Luca is developing the Continuous Deployment (CD) pipeline for AWS, utilizing micro cubes architecture to improve scalability and efficiency in deployments.
 
-#22.10.2024
+### 22.10.2024
 
 In the current meeting, we reviewed the status of the outstanding tasks and set priorities for the project. 
 The most urgent task is completing the CD pipeline to streamline the development process. 
@@ -329,6 +342,31 @@ This task is vital for enabling accurate control of project metrics.
 Luca will continue working on expanding the CD pipeline, with support from Mr. Nussle. 
 He will focus on developing and adjusting the pipeline to ensure it meets the project's requirements and runs smoothly.
 
+### 29.10.2024
+
+In today’s meeting, we reviewed the key tasks each team member will focus on to progress with project documentation and completion of the CI/CD pipeline. Specific tasks include finalizing technical implementations, reviewing, and updating documentation, as well as preparing the business report once data from the logger becomes available.
+ 
+Individual Tasks:
+ 
+**Luca:**
+ 
+Luca is responsible for completing and documenting the CI/CD pipeline. 
+This will involve final adjustments and ensuring all processes are well-documented for future reference.
+ 
+**Aryan:**
+ 
+Aryan will finalize the timelogger and complete its documentation. 
+Additionally, he will revise the section of the documentation detailing the project setup, ensuring it is clear and accurate.
+ 
+**Jan:**
+ 
+Jan is tasked with writing the meeting protocol to ensure project progress is thoroughly documented. 
+He will also review the current documentation, making any necessary updates or improvements.
+ 
+**Kay:**
+ 
+Kay will also review and, if necessary, update the documentation to ensure clarity and completeness. 
+If Aryan completes the logger today, Kay will begin drafting the business report and linking it in the documentation for comprehensive project reporting.
 
 ### 05.11.2024
 

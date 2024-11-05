@@ -1,4 +1,4 @@
-import User from "../../../../user/models/User.model";
+import type { User } from "../../../../user/models/User.model";
 
 interface UserProps {
     user : User
