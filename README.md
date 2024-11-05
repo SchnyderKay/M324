@@ -124,8 +124,19 @@ The Docker Build and Test CI Pipeline is set up to ensure the project builds suc
    - Pulls the necessary PostgreSQL image to include the database in the Docker environment.
    - Builds the Docker image using docker-compose, creating an environment that includes both the backend and the database.
    - Saves the completed Docker image as an artifact (`image.tar`) for potential deployment or further testing.
+   - Uploads image to DockerHub.
 
 By the end of the pipeline, both the test report and Docker image are preserved as artifacts, providing a clear snapshot of the build and test state for each commit or pull request. This ensures a consistent, tested environment ready for the next deployment stage.
+
+## CD Pipeline
+
+### Pipeline Workflow
+
+- Pulls latest docker image from DockerHub that the CI pipeline generated.
+- ArgoCD checks every 3 min if there has been a change in the pipeline [Github repository](https://github.com/LucaTomasko/M324_Pipeline).
+- If there has been a change it will rebuild the application with the updated image.
+- ArgoCD will upload these changes to the Kubernetes cluster that is hosted in an AWS server.
+
 
 ## Ticket System
 Our ticketing system lets users create tickets directly through the frontend when they need help or have a request.
