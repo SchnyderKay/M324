@@ -328,3 +328,32 @@ This task is vital for enabling accurate control of project metrics.
 
 Luca will continue working on expanding the CD pipeline, with support from Mr. Nussle. 
 He will focus on developing and adjusting the pipeline to ensure it meets the project's requirements and runs smoothly.
+
+
+#05.11.2024
+
+In today’s meeting, we clarified the remaining tasks needed to complete the logger, finalize the CI/CD pipeline, and prepare the business report.
+Each team member has been assigned theyr own responsibilities focused on completing these tasks and upload them into the documentation.
+
+Individual Tasks:
+
+**Aryan:**
+
+Aryan’s main task is to complete the logger, ensuring it functions as required and finalizing its documentation.
+
+**Luca:**
+
+Luca is responsible for finalizing the CI/CD pipeline. 
+Once this task is complete, he will assist Aryan if additional support is needed to complete the task.
+
+**Jan:**
+
+Jan will write today’s meeting protocol, ensuring all project actions are documented.
+Additionally, he will update the project’s key metrics. 
+Once these updates are complete, he will collaborate with Kay to write the business report.
+
+**Kay:** 
+
+Kay’s tasks include uploading the Docker image to Docker Hub for distribution.
+After updating the key metrics, she will work with Jan to write the business reporta. 
+Additionally, she will update all diagrams in the documentation with the new metrics.
