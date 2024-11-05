@@ -330,7 +330,7 @@ Luca will continue working on expanding the CD pipeline, with support from Mr. N
 He will focus on developing and adjusting the pipeline to ensure it meets the project's requirements and runs smoothly.
 
 
-#05.11.2024
+### 05.11.2024
 
 In today’s meeting, we clarified the remaining tasks needed to complete the logger, finalize the CI/CD pipeline, and prepare the business report.
 Each team member has been assigned theyr own responsibilities focused on completing these tasks and upload them into the documentation.
