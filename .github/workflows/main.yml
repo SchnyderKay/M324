@@ -54,7 +54,7 @@ jobs:
         run: docker pull postgres
 
       - name: Build Docker image
-        run: docker-compose -f ./DrinkDomain-main/backend/docker-compose.yml build
+        run: docker-compose -f ./DrinkDomain-main/docker-compose.yml build
 
       - name: Get image name
         id: get_image_name
